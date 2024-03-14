@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 //Author(s): Jackson, Katherine
@@ -16,5 +17,8 @@ public class DeathZone : MonoBehaviour
 
     private void DestroyPlayer()
     {
+        //if (GameObject.OnCollisionEnter)
+        //{
+        //}
     }
 }
