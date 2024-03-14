@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Author(s): Jackson, Katherine
+//Updated: 03/14/24
+//This script sets the standard position for the player to spawn at
+
 public class SetSpawn : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameObject.FindGameObjectWithTag("Player").transform.position = gameObject.transform.position;
     }
 }
