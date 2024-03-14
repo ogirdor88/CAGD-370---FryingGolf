@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 8345117788883775255}
   m_Layer: 0
   m_Name: SpawnPrefab
-  m_TagString: Untagged
+  m_TagString: Spawnpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &460846530724310726
 Transform:
   m_ObjectHideFlags: 0

@@ -616,6 +616,18 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!4 &1464401113 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 460846530724310726, guid: 2aff107627e60034ea437ad0e6989f8b,
+    type: 3}
+  m_PrefabInstance: {fileID: 9027307187263822056}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1945897419 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8835139320466203714, guid: 57315b9ab171a0840881b36ae47f3867,
+    type: 3}
+  m_PrefabInstance: {fileID: 8486623330847509866}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7985739726016815376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -624,16 +636,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1230507261868309830, guid: 6b8472e2b09ce3c4ab17f9e71657b1f8,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.57163715
-      objectReference: {fileID: 0}
-    - target: {fileID: 1230507261868309830, guid: 6b8472e2b09ce3c4ab17f9e71657b1f8,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.8883753
-      objectReference: {fileID: 0}
     - target: {fileID: 1230507261868309830, guid: 6b8472e2b09ce3c4ab17f9e71657b1f8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -689,6 +691,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeathZonePrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 7498822029543246084, guid: 6b8472e2b09ce3c4ab17f9e71657b1f8,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1945897419}
+    - target: {fileID: 7498822029543246084, guid: 6b8472e2b09ce3c4ab17f9e71657b1f8,
+        type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 1464401113}
     - target: {fileID: 8710605121846793122, guid: 6b8472e2b09ce3c4ab17f9e71657b1f8,
         type: 3}
       propertyPath: m_Enabled
@@ -833,9 +845,15 @@ PrefabInstance:
     - target: {fileID: 478947556049854072, guid: 2aff107627e60034ea437ad0e6989f8b,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8345117788883775255, guid: 2aff107627e60034ea437ad0e6989f8b,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8345117788883775255, guid: 2aff107627e60034ea437ad0e6989f8b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
