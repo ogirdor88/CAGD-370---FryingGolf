@@ -29,7 +29,10 @@ public class WinnerText : MonoBehaviour
     }
     private void OnCollisionExit(Collision collision)
     {
-        
+        if(collision.gameObject.tag=="Player")
+        {
+            winnerText.enabled = false;
+        }
     }
     void Update()
     {
