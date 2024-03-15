@@ -6,10 +6,11 @@ public class WinnerText : MonoBehaviour
 {
     //This script is planned for when the player 
     // Start is called before the first frame update
-    public Text winnerText;
+   
     public GameObject Goal;
     private int goal;
-
+    [SerializeField]
+    public Text winnerText;
     void Start()
     {
         winnerText.enabled = false;
@@ -20,20 +21,19 @@ public class WinnerText : MonoBehaviour
     // Update is called once per frame
     private void OnCollisionEnter(Collision collision)
     {
-        if (gameObject.tag == "Goalcheck")
+        if (collision.gameObject.tag == "Player")
         {
             winnerText.enabled=true;
-
+            //Ok so the text does turn out to be enabled but it doesn't disable 
         }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        
     }
     void Update()
     {
         
     }
-    private void SetCountText()
-    {
-        winnerText.text = "goal" + goal.ToString();
-       
-
-    }
+    
 }
