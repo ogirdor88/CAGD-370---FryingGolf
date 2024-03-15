@@ -11,11 +11,12 @@ public class WinnerText : MonoBehaviour
     private int goal;
     [SerializeField]
     public Text winnerText;
+    public Text SceneChangeText;
     void Start()
     {
         winnerText.enabled = false;
         //Try 3 
-
+        SceneChangeText.enabled = false;
     }
 
     // Update is called once per frame
@@ -25,6 +26,7 @@ public class WinnerText : MonoBehaviour
         {
             winnerText.enabled=true;
             //Ok so the text does turn out to be enabled but it doesn't disable 
+            SceneChangeText.enabled = true;
         }
     }
     private void OnCollisionExit(Collision collision)
@@ -32,6 +34,7 @@ public class WinnerText : MonoBehaviour
         if(collision.gameObject.tag=="Player")
         {
             winnerText.enabled = false;
+            SceneChangeText.enabled = false;
         }
     }
     void Update()
