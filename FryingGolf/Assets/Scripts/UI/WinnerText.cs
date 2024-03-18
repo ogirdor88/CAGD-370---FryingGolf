@@ -6,7 +6,10 @@ public class WinnerText : MonoBehaviour
 {
     //This script is planned for when the player 
     // Start is called before the first frame update
-   
+   //:Thou author :Fernando Uribe-Hernandez
+   //:Date :He forgot but its probably 3/14/24?
+   //:Description:This is when the player interacts with the goal  they will activate the text that will tell them they have cleared the level and the 
+   //scene is changing
     public GameObject Goal;
     private int goal;
     [SerializeField]
@@ -39,7 +42,10 @@ public class WinnerText : MonoBehaviour
     }
     void Update()
     {
-        
+        //Fernandos Idiotic report 1 3/18/24: I got a new laptop 
+        //Spent two whole days setting up github and unity again .....cause for some reason it would show up a blank screen 
+        //Now it works and you can see im writing here 
+        //I did get a warning beforehand but I ignored it cause...I dunno
     }
     
 }
