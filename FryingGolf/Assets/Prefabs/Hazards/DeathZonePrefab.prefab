@@ -118,5 +118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d5d9d4ff42c5954795faf01ccc1452d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  respawnPoint: {fileID: 0}
+  player: {fileID: 8835139320466203714, guid: 57315b9ab171a0840881b36ae47f3867, type: 3}
+  respawnPoint: {fileID: 460846530724310726, guid: 2aff107627e60034ea437ad0e6989f8b,
+    type: 3}

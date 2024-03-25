@@ -205,12 +205,12 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1945897419}
     - target: {fileID: 7498822029543246084, guid: 6b8472e2b09ce3c4ab17f9e71657b1f8,
         type: 3}
       propertyPath: respawnPoint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7985739726016815377}
     - target: {fileID: 8710605121846793122, guid: 6b8472e2b09ce3c4ab17f9e71657b1f8,
         type: 3}
       propertyPath: m_Enabled

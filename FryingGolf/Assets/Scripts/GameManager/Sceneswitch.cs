@@ -17,7 +17,8 @@ public class Sceneswitch : MonoBehaviour
     public GameObject player;
     public void Update()
     {
-        DontDestroyOnLoad(player);
+        
+        
     }
     public void OnCollisionEnter(Collision collision)
     {
@@ -25,10 +26,26 @@ public class Sceneswitch : MonoBehaviour
         {
             SwitchScene();
             print("scene has been changed");
+            Destroy(player);
+            //this is going to backfire and I just know it 
+            //well it didn't and now it works weee
+
         }
         //player does switch scenes he just goes Out of bounds setting a spawn point might work 
 
     }
+    /*private void Awake()
+    {
+        GameObject[]golfball=GameObject.FindGameObjectsWithTag("Player");
+        if(golfball.Length> 1)
+        {
+            Destroy(player);
+        }
+        else
+        {
+            DontDestroyOnLoad(player);
+        }
+    }*/
     //handles what scene the player will go into next
     public int newSceneIndex;
 
