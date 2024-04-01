@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//Author: Jackson, Katherine
+//Author: Jackson, Katherine  ,Uribe-Hernandez,Fernando(edited)
 //Date: 03/14/2024
 //Allows the player to switch between scenes
 
