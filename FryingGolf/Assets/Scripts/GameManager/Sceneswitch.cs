@@ -26,7 +26,7 @@ public class Sceneswitch : MonoBehaviour
         {
             SwitchScene();
             print("scene has been changed");
-            Destroy(player);
+            DestroyImmediate(player);
             //this is going to backfire and I just know it 
             //well it didn't and now it works weee
 
