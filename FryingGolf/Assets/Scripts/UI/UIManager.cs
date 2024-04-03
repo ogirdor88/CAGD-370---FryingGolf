@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //Author(s): Jackson, Katherine
 //Updated: 04/02/24
@@ -16,10 +17,5 @@ public class UIManager : MonoBehaviour
         {
             pauseMenu.SetActive(true);
         }
-    }
-
-    private void Resume()
-    {
-
     }
 }

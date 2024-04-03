@@ -25,13 +25,11 @@ public class Sceneswitch : MonoBehaviour
         if (collision.gameObject.tag=="Player")
         {
             SwitchScene();
-            print("scene has been changed");
+            print("Scene has been changed");
             DestroyImmediate(player);
-            //this is going to backfire and I just know it 
-            //well it didn't and now it works weee
 
         }
-        //player does switch scenes he just goes Out of bounds setting a spawn point might work 
+        //Player does spawn, but goes out of bounds if a spawnPoint is not set 
 
     }
     /*private void Awake()
@@ -46,7 +44,8 @@ public class Sceneswitch : MonoBehaviour
             DontDestroyOnLoad(player);
         }
     }*/
-    //handles what scene the player will go into next
+    //Handles what scene the player is placed into next.
+    //Is placed on the Goal Check GameObject in the Golf goal post Prefab
     public int newSceneIndex;
 
     //used to switch to the next depending on what newSceneIndex is
