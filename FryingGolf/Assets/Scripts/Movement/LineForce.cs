@@ -45,6 +45,8 @@ public class LineForce : MonoBehaviour
 
         //the ball is idle
         _isIdle = true;
+
+        Debug.Log("STOPPED");
     }
 
 
