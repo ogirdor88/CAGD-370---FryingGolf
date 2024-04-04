@@ -453,7 +453,6 @@ GameObject:
   - component: {fileID: 129554287}
   - component: {fileID: 129554286}
   - component: {fileID: 129554285}
-  - component: {fileID: 129554284}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -461,27 +460,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &129554284
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129554283}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &129554285
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -604,6 +582,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Home
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889689089777789885, guid: 74c30dc1acbbce54eaafc441ac15866f,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4893132785068557634, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
@@ -1153,6 +1136,11 @@ PrefabInstance:
       propertyPath: m_AngularDrag
       value: 0.08
       objectReference: {fileID: 0}
+    - target: {fileID: 5266028525136286936, guid: 92cc41ff99076dc48b41534cded11e8f,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8847434242870398316, guid: 92cc41ff99076dc48b41534cded11e8f,
         type: 3}
       propertyPath: m_Name
@@ -1445,17 +1433,17 @@ PrefabInstance:
     - target: {fileID: 2832475042470440758, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.02785394
+      value: -0.027853899
       objectReference: {fileID: 0}
     - target: {fileID: 2832475042470440758, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000029802319
+      value: -0.000000059604645
       objectReference: {fileID: 0}
     - target: {fileID: 2832475042470440758, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000014901159
+      value: 0.000000014901161
       objectReference: {fileID: 0}
     - target: {fileID: 3083429753483732932, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
@@ -1520,7 +1508,7 @@ PrefabInstance:
     - target: {fileID: 5981893768675214795, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0046597123
+      value: -0.0046597347
       objectReference: {fileID: 0}
     - target: {fileID: 5981893768675214795, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
@@ -1530,7 +1518,7 @@ PrefabInstance:
     - target: {fileID: 5981893768675214795, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000014901161
+      value: -0.000000037252903
       objectReference: {fileID: 0}
     - target: {fileID: 6907884944024806861, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
@@ -2970,7 +2958,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1463070825}
     - target: {fileID: 3809873984647015112, guid: 7e9c94d216f9fbb4b8ac6a5bd9e63d0d,
         type: 3}
       propertyPath: respawnPoint
