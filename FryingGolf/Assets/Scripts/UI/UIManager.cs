@@ -11,11 +11,11 @@ public class UIManager : MonoBehaviour
 {
     GameObject pauseMenu;
 
-    private void Update()
+    /*private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pauseMenu.SetActive(true);
         }
-    }
+    }*/
 }

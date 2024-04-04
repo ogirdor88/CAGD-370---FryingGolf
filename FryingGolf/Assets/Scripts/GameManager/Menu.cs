@@ -11,6 +11,15 @@ public class Menu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            pauseMenu.SetActive(true);
+            Time.timeScale = 0f;
+        }
+    }
+
     public void ExitButton()
     {
         Application.Quit();
@@ -21,20 +30,26 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("Level1");
     }
 
-    //The following is for the Pause Menu UI
+    public void HowToPlay(int sceneID)
+    {
+        SceneManager.LoadScene(sceneID);
+    }
 
+    //Pause Menu UI
     public void Pause()
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
     }
 
+    //Pause Menu UI
     public void Resume()
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
     }
 
+    //Pause Menu UI
     public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -42,6 +57,7 @@ public class Menu : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    //Pause Menu UI
     public void Home(int sceneID)
     {
         Time.timeScale = 1f;
