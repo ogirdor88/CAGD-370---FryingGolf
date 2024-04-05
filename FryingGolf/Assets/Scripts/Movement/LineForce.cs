@@ -13,11 +13,13 @@ public class LineForce : MonoBehaviour
 
     private bool _isIdle;
     private bool _isAiming;
+    private Color _color;
 
     private Rigidbody _rigidbody;
 
     private void Awake()
     {
+        _color = GetComponent<Renderer>().material.color;
         //set the rigidbody
         _rigidbody = GetComponent<Rigidbody>();
 
@@ -37,11 +39,12 @@ public class LineForce : MonoBehaviour
         Aiming();
     }
 
-    private void StopBall()
+    public void StopBall()
     {
         //set the velocity of the ball to 0
         _rigidbody.velocity = Vector3.zero;
         _rigidbody.angularVelocity = Vector3.zero;
+        this.GetComponent<Renderer>().material.color = Color.green;
 
         //the ball is idle
         _isIdle = true;
@@ -88,6 +91,7 @@ public class LineForce : MonoBehaviour
         
         _isAiming = false;
         lineRenderer.enabled=false;
+        GetComponent<Renderer>().material.color = _color;
 
         Vector3 horizontalWorldPoint = new Vector3(wp.x, transform.position.y, wp.z);
 
