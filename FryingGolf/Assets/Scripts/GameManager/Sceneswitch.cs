@@ -26,14 +26,15 @@ public class Sceneswitch : MonoBehaviour
         {
             SwitchScene();
             print("Scene has been changed");
-            DestroyImmediate(player);
+            //DestroyImmediate(player);
 
         }
         //Player does spawn, but goes out of bounds if a spawnPoint is not set 
 
     }
-    /*private void Awake()
+    private void Awake()
     {
+       
         GameObject[]golfball=GameObject.FindGameObjectsWithTag("Player");
         if(golfball.Length> 1)
         {
@@ -43,7 +44,7 @@ public class Sceneswitch : MonoBehaviour
         {
             DontDestroyOnLoad(player);
         }
-    }*/
+    }
     //Handles what scene the player is placed into next.
     //Is placed on the Goal Check GameObject in the Golf goal post Prefab
     public int newSceneIndex;
