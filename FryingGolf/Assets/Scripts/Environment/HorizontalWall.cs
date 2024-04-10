@@ -6,7 +6,7 @@ public class HorizontalWall : MonoBehaviour
 {
     [SerializeField] private GameObject LeftPoint;
     [SerializeField] private GameObject RightPoint;
-    [SerializeField] private float movespeed;
+    [SerializeField] protected float movespeed;
 
     private bool goLeft;
 

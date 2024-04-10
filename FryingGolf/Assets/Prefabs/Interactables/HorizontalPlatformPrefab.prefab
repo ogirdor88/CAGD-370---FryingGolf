@@ -43,10 +43,10 @@ GameObject:
   - component: {fileID: 6752856027572111400}
   - component: {fileID: 5516612441253902697}
   - component: {fileID: 1592788751185344973}
-  - component: {fileID: 2240615759117868434}
+  - component: {fileID: 5690089396906198875}
   m_Layer: 0
   m_Name: HorizontalPlatform
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,7 +137,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2240615759117868434
+--- !u!114 &5690089396906198875
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3758968254711757563}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bd93e9bb2dfc5d40b3dfcd58a446fc5, type: 3}
+  m_Script: {fileID: 11500000, guid: c9f2dece386550b42b262cc05082caed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   LeftPoint: {fileID: 1245985062105309277}
@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 763298189029358717}
   m_Layer: 0
   m_Name: HorizontalPlatformPrefab
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
