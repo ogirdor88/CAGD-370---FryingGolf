@@ -11,6 +11,9 @@ public class LineForce : MonoBehaviour
     [SerializeField]private float stopVelocity = .05f;
     [SerializeField]private float shotPower;
 
+    //Updating strokeCount in function Shootball to be used in UIManager script.
+    public int strokeCount;
+
     private bool _isIdle;
     private bool _isAiming;
     private Color _color;
@@ -100,6 +103,8 @@ public class LineForce : MonoBehaviour
 
         _rigidbody.AddForce( direction *  strength * shotPower);
         _isIdle = false;
+
+        strokeCount++;
     }
 
     private void DrawLine(Vector3 worldpoint)

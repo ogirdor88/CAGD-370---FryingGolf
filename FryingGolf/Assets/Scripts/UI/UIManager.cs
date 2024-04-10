@@ -16,15 +16,25 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI strokeText;
     private int stroke;
 
+    //Referencing LineForce script and Golfball prefab GameObject for variables
+    LineForce updateStrokeOnHit;
+    [SerializeField] GameObject strokeInt;
+
     private void Awake()
     {
         strokeText.text = "Strokes 0";
+        //to get the stroke from GameObject containing LineForce script
+        updateStrokeOnHit = strokeInt.GetComponent<LineForce>();
+    }
+
+    private void Update()
+    {
+        SetUIText();
     }
 
     public void SetUIText()
     {
-        stroke++;
+        stroke = updateStrokeOnHit.strokeCount;
         strokeText.text = "Strokes " + stroke.ToString();
-        //strokeText.text = newText;
     }
 }

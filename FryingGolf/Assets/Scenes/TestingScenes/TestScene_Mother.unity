@@ -1165,6 +1165,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 806225740}
     m_Modifications:
+    - target: {fileID: 4166718457951324510, guid: 92cc41ff99076dc48b41534cded11e8f,
+        type: 3}
+      propertyPath: strokeInt
+      value: 
+      objectReference: {fileID: 592633322}
+    - target: {fileID: 4166718457951324510, guid: 92cc41ff99076dc48b41534cded11e8f,
+        type: 3}
+      propertyPath: strokeCount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4641298004361844743, guid: 92cc41ff99076dc48b41534cded11e8f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2114,6 +2124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strokeText: {fileID: 524101247}
+  stroke: 0
+  strokeInt: {fileID: 1750728411}
 --- !u!114 &592633325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5089,6 +5101,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708160797}
   m_CullTransparentMesh: 1
+--- !u!1 &1750728411 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8847434242870398316, guid: 92cc41ff99076dc48b41534cded11e8f,
+    type: 3}
+  m_PrefabInstance: {fileID: 354481751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1811783291
 GameObject:
   m_ObjectHideFlags: 0
