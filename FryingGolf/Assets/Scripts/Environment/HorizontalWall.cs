@@ -30,27 +30,27 @@ public class HorizontalWall : MonoBehaviour
     /// </summary>
     private void LeftAndRightX()
     {
-        //get the position of the obstical
+        //get the position of the obstacle
         Vector3 currPos = transform.position;
 
-        //if the obstical is moving left and is on the right side of the left most point move it left
-        if(goLeft && currPos.x > LeftPoint.transform.position.x)
+        //if the obstacle is moving left and is on the right side of the left most point move it left
+        if (goLeft && currPos.x > LeftPoint.transform.position.x)
         {
             currPos += Vector3.left * movespeed * Time.deltaTime;
             transform.position = currPos;
-            //if the obstical reaches the left most point stop going left 
+            //if the obstacle reaches the left most point stop going left 
             if (currPos.x <= LeftPoint.transform.position.x)
             {
                 goLeft = false;
             }
         }
 
-        //if the obstical is not going left and is on the left side of the right most point move it right
-        if(!goLeft && currPos.x < RightPoint.transform.position.x)
+        //if the obstacle is not going left and is on the left side of the right most point move it right
+        if (!goLeft && currPos.x < RightPoint.transform.position.x)
         {
             currPos += Vector3.right * movespeed * Time.deltaTime;
             transform.position = currPos;
-            //if the obstical reaches the right most point change it to go left;
+            //if the obstacle reaches the right most point change it to go left;
             if (currPos.x >= RightPoint.transform.position.x)
             {
                 goLeft = true;

@@ -134,4 +134,12 @@ public class LineForce : MonoBehaviour
         else
             return null;
     }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if(collision.gameObject.tag == "Platform" && _isIdle)
+        {
+            transform.position = new Vector3(collision.transform.position.x, transform.position.y, collision.transform.position.z);
+        }
+    }
 }
