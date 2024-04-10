@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 8298437999568491949}
   - component: {fileID: 3612443856713983228}
   m_Layer: 0
-  m_Name: HorizontalObstical
+  m_Name: HorizontalObstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

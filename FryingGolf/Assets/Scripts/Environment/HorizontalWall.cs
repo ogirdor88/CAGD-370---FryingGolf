@@ -21,10 +21,14 @@ public class HorizontalWall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        LeftAndRight();
+        //LeftAndRightX();
+        MoveBetween();
     }
 
-    private void LeftAndRight()
+    /// <summary>
+    /// move an object back and forth along the x axis
+    /// </summary>
+    private void LeftAndRightX()
     {
         //get the position of the obstical
         Vector3 currPos = transform.position;
@@ -53,6 +57,30 @@ public class HorizontalWall : MonoBehaviour
             }
         }
 
+    }
+
+    /// <summary>
+    /// move an object between two points no matter the orientation
+    /// </summary>
+    private void MoveBetween()
+    {
+        if(goLeft)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, LeftPoint.transform.position, Time.deltaTime * movespeed);
+            if(transform.position == LeftPoint.transform.position)
+            {
+                goLeft = false;
+            }
+        }
+
+        if (!goLeft)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, RightPoint.transform.position, Time.deltaTime * movespeed);
+            if (transform.position == RightPoint.transform.position)
+            {
+                goLeft = true;
+            }
+        }
     }
 
 }
