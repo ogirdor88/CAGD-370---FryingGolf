@@ -1,21 +1,20 @@
-    using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 
+//Author(s): Jackson, Katherine
+//Updated: 03/14/24
+//This script handles interactions with other objects and the attached GameObject.
+
 public class Player : MonoBehaviour
 {
-    private Vector3  startPos;
-    // Start is called before the first frame update
-    void Start()
+    /*private void OnTriggerStay(Collider other)
     {
-        startPos = transform.position;  
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        if (other.gameObject.tag == "Water")
+        {
+            Debug.Log("You are about to die.");
+        }
+    }*/
 }

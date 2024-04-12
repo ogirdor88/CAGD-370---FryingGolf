@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6497809571663835580}
   - component: {fileID: 1384963144287495469}
   - component: {fileID: 7928732134438872498}
-  - component: {fileID: 7501131486582339003}
   m_Layer: 0
   m_Name: WaterTrap
   m_TagString: Water
@@ -106,17 +105,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7501131486582339003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145589823366531472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d5d9d4ff42c5954795faf01ccc1452d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  respawnPoint: {fileID: 0}

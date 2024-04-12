@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6656974737650176359}
   - component: {fileID: 8710605121846793122}
   - component: {fileID: 7842733966863921257}
-  - component: {fileID: 7498822029543246084}
   m_Layer: 0
   m_Name: DeathZonePrefab
   m_TagString: DeathZone
@@ -106,18 +105,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7498822029543246084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3456449865337927691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d5d9d4ff42c5954795faf01ccc1452d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 4641298004361844743, guid: 92cc41ff99076dc48b41534cded11e8f, type: 3}
-  respawnPoint: {fileID: 460846530724310726, guid: 2aff107627e60034ea437ad0e6989f8b,
-    type: 3}

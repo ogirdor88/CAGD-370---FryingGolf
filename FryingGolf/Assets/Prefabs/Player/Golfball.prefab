@@ -150,6 +150,7 @@ GameObject:
   - component: {fileID: 4237989760244463945}
   - component: {fileID: 5266028525136286936}
   - component: {fileID: 4166718457951324510}
+  - component: {fileID: 713178776222282803}
   m_Layer: 0
   m_Name: Golfball
   m_TagString: Player
@@ -286,3 +287,19 @@ MonoBehaviour:
   lineRenderer: {fileID: 5417021103677369108}
   stopVelocity: 0.05
   shotPower: 100
+  strokeCount: 0
+--- !u!114 &713178776222282803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8847434242870398316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d5d9d4ff42c5954795faf01ccc1452d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 4641298004361844743}
+  respawnPoint: {fileID: 460846530724310726, guid: 2aff107627e60034ea437ad0e6989f8b,
+    type: 3}
