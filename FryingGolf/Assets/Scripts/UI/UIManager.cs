@@ -29,12 +29,12 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        warningText.enabled = false;
+        /*warningText.enabled = false;
         warningText2.enabled = false;
         warningText3.enabled = false;
        warningText4.enabled = false;
         warningText5.enabled = false;
-
+       */
     }
     private void Awake()
     {
@@ -62,7 +62,7 @@ public class UIManager : MonoBehaviour
         {
             warningText.enabled = true;
             print("text was enabled");
-            Invoke("Disapearation", 6f);
+            Invoke("Disapearableation", 4f);
 
           
            
@@ -71,25 +71,25 @@ public class UIManager : MonoBehaviour
         {
             warningText2.enabled = true;
             print("text was enabled");
-            Invoke("Disapearation2", 6f);
+            Invoke("Disapearableation2", 6f);
         }
         if (strokeText.text == "Strokes 12")
         {
             warningText3.enabled = true;
             print("text was enabled");
-            Invoke("Disapearation3", 6f);
+            Invoke("Disapearableation3", 6f);
         }
         if (strokeText.text == "Strokes 13")
         {
             warningText4.enabled = true;
             print("text was enabled");
-            Invoke("Disapearation4", 6f);
+            Invoke("Disapearableation4", 6f);
         }
         if (strokeText.text == "Strokes 14")
         {
             warningText5.enabled = true;
             print("text was enabled");
-            Invoke("Disapearation5", 6f);
+            Invoke("Disapearableation5", 6f);
 
         }
         
