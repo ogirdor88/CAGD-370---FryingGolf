@@ -8,6 +8,7 @@ TagManager:
   - DeathZone
   - Spawnpoint
   - Platform
+  - Water
   layers:
   - Default
   - TransparentFX
