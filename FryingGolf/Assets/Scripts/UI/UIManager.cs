@@ -21,8 +21,8 @@ public class UIManager : MonoBehaviour
     public Text warningText3;
     public Text warningText4;
     public Text warningText5;
-    private float time = 6f;
-    
+    private float timeappear = 6f;
+    private float disapear;
     //Referencing LineForce script and Golfball prefab GameObject for variables
     LineForce updateStrokeOnHit;
     [SerializeField] GameObject strokeInt;
@@ -62,7 +62,8 @@ public class UIManager : MonoBehaviour
         {
             warningText.enabled = true;
             print("text was enabled");
-            
+            Invoke("Disapearation", 6f);
+
           
            
         }
@@ -70,29 +71,48 @@ public class UIManager : MonoBehaviour
         {
             warningText2.enabled = true;
             print("text was enabled");
-
+            Invoke("Disapearation2", 6f);
         }
         if (strokeText.text == "Strokes 12")
         {
             warningText3.enabled = true;
             print("text was enabled");
-
+            Invoke("Disapearation3", 6f);
         }
         if (strokeText.text == "Strokes 13")
         {
             warningText4.enabled = true;
             print("text was enabled");
-
+            Invoke("Disapearation4", 6f);
         }
         if (strokeText.text == "Strokes 14")
         {
             warningText5.enabled = true;
             print("text was enabled");
-           
+            Invoke("Disapearation5", 6f);
 
         }
         
     }
-   
+    public void Disapearableation()
+    {
+        warningText.enabled = false;
+    }
+    public void Disapearableation2()
+    {
+        warningText2.enabled = false;
+    }
+    public void Disapearableation3()
+    {
+        warningText3.enabled = false;
 
+    }
+    public void Disapearableation4()
+    {
+        warningText4.enabled = false;
+    }
+    public void Disapearableation5()
+    {
+        warningText5.enabled = false;
+    }
 }
