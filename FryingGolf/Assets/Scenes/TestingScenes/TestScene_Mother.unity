@@ -554,7 +554,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &167794846
 RectTransform:
   m_ObjectHideFlags: 0
@@ -607,7 +607,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "YOU ARE ABOUT TO LOSE \nYOU IDIOT"
+  m_Text: 'We are doomed
+
+    this is your last stroke make it count '
 --- !u!222 &167794848
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3509,7 +3511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &974541384
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3562,7 +3564,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "YOU ARE ABOUT TO LOSE \nYOU IDIOT"
+  m_Text: "YOU ARE A \nFOOOOL \n1 stroke left"
 --- !u!222 &974541386
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4672,17 +4674,17 @@ PrefabInstance:
     - target: {fileID: 8071630758591255116, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.018637717
+      value: 0.018637702
       objectReference: {fileID: 0}
     - target: {fileID: 8071630758591255116, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000059604645
+      value: 0.00000017881393
       objectReference: {fileID: 0}
     - target: {fileID: 8071630758591255116, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000007450581
+      value: -0.000000074505806
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5164,7 +5166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1456213209
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5217,7 +5219,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "YOU ARE ABOUT TO LOSE \nYOU IDIOT"
+  m_Text: "You fool \nYou have 3 left now "
 --- !u!222 &1456213211
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6178,7 +6180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "YOU ARE ABOUT TO LOSE \nYOU IDIOT"
+  m_Text: "You have \n4 strokes \nleft "
 --- !u!222 &1939732685
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6443,7 +6445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2020066962
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6496,7 +6498,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "YOU ARE ABOUT TO LOSE \nYOU IDIOT"
+  m_Text: "Oh dear \nIt looks like \nyou only have 2 strokes left"
 --- !u!222 &2020066964
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
+using UnityEditor.Experimental.GraphView;
 
 //Author(s): Jackson, Katherine
 //Updated: 04/09/24
@@ -29,12 +30,13 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        /*warningText.enabled = false;
+        warningText.enabled = false;
         warningText2.enabled = false;
         warningText3.enabled = false;
        warningText4.enabled = false;
         warningText5.enabled = false;
-       */
+       
+       
     }
     private void Awake()
     {
@@ -58,15 +60,24 @@ public class UIManager : MonoBehaviour
     }
   private void Warnings()
     {
-        if (strokeText.text == "Strokes 1")
+        if (strokeText.text == "Strokes 1")//&& true
         {
             warningText.enabled = true;
             print("text was enabled");
-            Invoke("Disapearableation", 4f);
+            //Invoke("Disapearableation", 6f);
 
-          
-           
+   
+            //warningText.enabled= false;
+
+
+
         }
+        else
+        {
+            warningText.enabled = false;
+            print("Text was disabled");
+        }
+        
         if (strokeText.text == "Strokes 11")
         {
             warningText2.enabled = true;
@@ -96,7 +107,11 @@ public class UIManager : MonoBehaviour
     }
     public void Disapearableation()
     {
-        warningText.enabled = false;
+        if(warningText.enabled==true)
+        {
+            warningText.enabled = false;
+        }
+        
     }
     public void Disapearableation2()
     {
