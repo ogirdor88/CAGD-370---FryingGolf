@@ -60,7 +60,7 @@ public class UIManager : MonoBehaviour
     }
   private void Warnings()
     {
-        if (strokeText.text == "Strokes 1")//&& true
+        if (strokeText.text == "Strokes 10")//&& true
         {
             warningText.enabled = true;
             print("text was enabled");
@@ -82,28 +82,48 @@ public class UIManager : MonoBehaviour
         {
             warningText2.enabled = true;
             print("text was enabled");
-            Invoke("Disapearableation2", 6f);
+            
+        }
+        else
+        {
+            warningText2.enabled = false;
+            print("Text was disabled");
         }
         if (strokeText.text == "Strokes 12")
         {
             warningText3.enabled = true;
             print("text was enabled");
-            Invoke("Disapearableation3", 6f);
+            
+        }
+        else
+        {
+            warningText3.enabled = false;
+            print("Text was disabled");
         }
         if (strokeText.text == "Strokes 13")
         {
             warningText4.enabled = true;
             print("text was enabled");
-            Invoke("Disapearableation4", 6f);
+            
+        }
+        else
+        {
+            warningText4.enabled = false;
+            print("Text was disabled");
         }
         if (strokeText.text == "Strokes 14")
         {
             warningText5.enabled = true;
             print("text was enabled");
-            Invoke("Disapearableation5", 6f);
+           
 
         }
-        
+        else
+        {
+            warningText5.enabled = false;
+            print("Text was disabled");
+        }
+
     }
     public void Disapearableation()
     {
