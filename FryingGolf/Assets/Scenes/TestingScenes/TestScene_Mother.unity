@@ -554,7 +554,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &167794846
 RectTransform:
   m_ObjectHideFlags: 0
@@ -571,8 +571,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 41.42, y: -60.5}
-  m_SizeDelta: {x: 289.3, y: 500}
+  m_AnchoredPosition: {x: 0, y: -60}
+  m_SizeDelta: {x: 461.9, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &167794847
 MonoBehaviour:
@@ -601,15 +601,17 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'We are doomed
+  m_Text: 'You are doomed
 
-    this is your last stroke make it count '
+    This is your last stroke
+
+    Make it count '
 --- !u!222 &167794848
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3511,7 +3513,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &974541384
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3528,8 +3530,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 41.42, y: -60.5}
-  m_SizeDelta: {x: 289.3, y: 500}
+  m_AnchoredPosition: {x: 0, y: -60}
+  m_SizeDelta: {x: 465.5, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &974541385
 MonoBehaviour:
@@ -3558,13 +3560,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "YOU ARE A \nFOOOOL \n1 stroke left"
+  m_Text: "YOU ARE A FOOOOL \n2 strokes left"
 --- !u!222 &974541386
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5166,7 +5168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1456213209
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5183,8 +5185,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 41.42, y: -60.5}
-  m_SizeDelta: {x: 289.3, y: 500}
+  m_AnchoredPosition: {x: 0, y: -60}
+  m_SizeDelta: {x: 386.62, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1456213210
 MonoBehaviour:
@@ -5213,13 +5215,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "You fool \nYou have 3 left now "
+  m_Text: "You fool \nYou have 4 left now "
 --- !u!222 &1456213211
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6127,7 +6129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1939732683
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6144,7 +6146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 41.42, y: -60.5}
+  m_AnchoredPosition: {x: 0, y: -60}
   m_SizeDelta: {x: 289.3, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1939732684
@@ -6174,13 +6176,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "You have \n4 strokes \nleft "
+  m_Text: 'You have 5 strokes left '
 --- !u!222 &1939732685
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6462,8 +6464,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 41.42, y: -60.5}
-  m_SizeDelta: {x: 289.3, y: 500}
+  m_AnchoredPosition: {x: 0, y: -60}
+  m_SizeDelta: {x: 516.03, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2020066963
 MonoBehaviour:
@@ -6492,13 +6494,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Oh dear \nIt looks like \nyou only have 2 strokes left"
+  m_Text: "Oh dear \nIt looks like you only have 3 strokes left"
 --- !u!222 &2020066964
 CanvasRenderer:
   m_ObjectHideFlags: 0
