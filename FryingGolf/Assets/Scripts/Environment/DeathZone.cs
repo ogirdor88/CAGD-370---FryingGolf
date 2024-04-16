@@ -11,13 +11,13 @@ public class DeathZone : MonoBehaviour
 {
     public Transform player;
     public Transform respawnPoint;
-    public bool waterColliding;
+    public bool isWaterColliding;
 
     //private string waterCoroutine = WaterTimer();
 
     private void FixedUpdate()
     {
-        if (waterColliding != true)
+        if (isWaterColliding != true)
         {
             StopCoroutine(WaterTimer());
         }
@@ -30,7 +30,7 @@ public class DeathZone : MonoBehaviour
         {
             Debug.Log("You are about to drown.");
             //Sets waterColliding boolean to true for WaterTimer to check if it is true or false
-            waterColliding = true;
+            isWaterColliding = true;
             //Starts IEnumerator WaterTimer which respawns player after a certain time if the waterColliding boolean is true
             StartCoroutine("WaterTimer");
             
@@ -48,14 +48,18 @@ public class DeathZone : MonoBehaviour
     //This causes the WaterTimer to stop if the player is no longer touching the trigger object (Will later change)
     private void OnTriggerExit(Collider other)
     {
-        waterColliding = false;
+        if (other.gameObject.tag == "Water")
+        {
+            isWaterColliding = false;
+        }
+        
     }
 
     private IEnumerator WaterTimer()
     {
         yield return new WaitForSeconds(4f);
         Debug.Log("Checking if in water...");
-        if (waterColliding == true)
+        if (isWaterColliding == true)
         {
             Debug.Log("You drowned.");
             player.transform.position = respawnPoint.transform.position;
@@ -64,7 +68,7 @@ public class DeathZone : MonoBehaviour
         }
         else
         {
-            waterColliding = false;
+            isWaterColliding = false;
         }
     }
 }
