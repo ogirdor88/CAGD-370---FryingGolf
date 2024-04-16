@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
 using UnityEditor.Experimental.GraphView;
 
-//Author(s): Jackson, Katherine
+//Author(s): Jackson, Katherine; Uribe-Hernandez, Fernando
 //Updated: 04/09/24
 //This script executes all code relevant to player information between levels.
 
@@ -17,16 +17,19 @@ public class UIManager : MonoBehaviour
     //GameObject strokeCounter;  
     public TextMeshProUGUI strokeText;
     private int stroke;
-    public Text  warningText;
+
+    //Referencing LineForce script and Golfball prefab GameObject for variables
+    LineForce updateStrokeOnHit;
+    [SerializeField] GameObject strokeInt;
+
+    //Warning Text variables
+    public Text warningText;
     public Text warningText2;
     public Text warningText3;
     public Text warningText4;
     public Text warningText5;
-    private float timeappear = 6f;
-    private float disapear;
-    //Referencing LineForce script and Golfball prefab GameObject for variables
-    LineForce updateStrokeOnHit;
-    [SerializeField] GameObject strokeInt;
+    //private float timeappear = 6f;
+    //private float disapear;
 
     private void Start()
     {

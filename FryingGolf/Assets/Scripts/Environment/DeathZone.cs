@@ -11,14 +11,31 @@ public class DeathZone : MonoBehaviour
 {
     public Transform player;
     public Transform respawnPoint;
+    public bool waterColliding;
 
+    //private string waterCoroutine = WaterTimer();
+
+    private void FixedUpdate()
+    {
+        if (waterColliding != true)
+        {
+            StopCoroutine(WaterTimer());
+        }
+    }
+
+    //Once Golfball GameObject collides with another object, checks if the other GameObject's tag is "Water" or "DeathZone"
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Water")
         {
             Debug.Log("You are about to drown.");
-            StartCoroutine(WaterTimer());
+            //Sets waterColliding boolean to true for WaterTimer to check if it is true or false
+            waterColliding = true;
+            //Starts IEnumerator WaterTimer which respawns player after a certain time if the waterColliding boolean is true
+            StartCoroutine("WaterTimer");
+            
         }
+        //Immediately respawns the player
         if (other.gameObject.tag == "DeathZone")
         {
             player.transform.position = respawnPoint.transform.position;
@@ -27,11 +44,27 @@ public class DeathZone : MonoBehaviour
         }
     }
 
+    //Once Golfball GameObject exits collision trigger with another object, no matter the object, sets the waterColliding boolean to false
+    //This causes the WaterTimer to stop if the player is no longer touching the trigger object (Will later change)
+    private void OnTriggerExit(Collider other)
+    {
+        waterColliding = false;
+    }
+
     private IEnumerator WaterTimer()
     {
         yield return new WaitForSeconds(4f);
-        Debug.Log("You drowned.");
-        player.transform.position = respawnPoint.transform.position;
-        player.GetComponent<LineForce>().StopBall();
+        Debug.Log("Checking if in water...");
+        if (waterColliding == true)
+        {
+            Debug.Log("You drowned.");
+            player.transform.position = respawnPoint.transform.position;
+            player.GetComponent<LineForce>().StopBall();
+            Debug.Log("Respawned.");
+        }
+        else
+        {
+            waterColliding = false;
+        }
     }
 }
