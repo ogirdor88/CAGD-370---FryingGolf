@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 5266028525136286936}
   - component: {fileID: 4166718457951324510}
   - component: {fileID: 713178776222282803}
+  - component: {fileID: 6786272681744152228}
   m_Layer: 0
   m_Name: Golfball
   m_TagString: Player
@@ -253,9 +254,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8847434242870398316}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 1.1
   m_Drag: 0.75
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.08
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -271,7 +272,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &4166718457951324510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,3 +304,22 @@ MonoBehaviour:
   player: {fileID: 4641298004361844743}
   respawnPoint: {fileID: 460846530724310726, guid: 2aff107627e60034ea437ad0e6989f8b,
     type: 3}
+  isWaterColliding: 0
+--- !u!114 &6786272681744152228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8847434242870398316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14e1e2a0796ddb043bfe50e19c3420d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  underWaterDrag: 1.5
+  underWaterAngularDrag: 1
+  airDrag: 0.05
+  airAngularDrag: 0.05
+  floatingPower: 40
+  waterHeight: -3.5
