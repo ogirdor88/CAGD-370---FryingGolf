@@ -1313,9 +1313,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14e1e2a0796ddb043bfe50e19c3420d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  underWaterDrag: 3
+  underWaterDrag: 1.5
   underWaterAngularDrag: 1
-  airDrag: 0
+  airDrag: 0.05
   airAngularDrag: 0.05
   floatingPower: 40
   waterHeight: -3.5

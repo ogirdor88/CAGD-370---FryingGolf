@@ -10,10 +10,10 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Buoyancy : MonoBehaviour
 {
-    [SerializeField] private float underWaterDrag = 3f;
+    [SerializeField] private float underWaterDrag = 1.5f;
     [SerializeField] private float underWaterAngularDrag = 1f;
 
-    [SerializeField] private float airDrag = 0f;
+    [SerializeField] private float airDrag = 0.05f;
     [SerializeField] private float airAngularDrag = 0.05f;
 
     [SerializeField] private float floatingPower = 40f;
