@@ -10,6 +10,7 @@ public class LineForce : MonoBehaviour
     [SerializeField]private LineRenderer lineRenderer;
     [SerializeField]private float stopVelocity = .05f;
     [SerializeField]private float shotPower;
+    [SerializeField]private GameObject SpawnPoint;
 
     //Updating strokeCount in function Shootball to be used in UIManager script.
     public int strokeCount;
@@ -53,6 +54,7 @@ public class LineForce : MonoBehaviour
         _isIdle = true;
 
         Debug.Log("STOPPED");
+        SpawnPoint.transform.position = this.transform.position;    
     }
 
 

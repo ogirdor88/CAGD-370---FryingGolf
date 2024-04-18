@@ -286,8 +286,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 5417021103677369108}
-  stopVelocity: 0.05
+  stopVelocity: 0.4
   shotPower: 100
+  SpawnPoint: {fileID: 0}
   strokeCount: 0
 --- !u!114 &713178776222282803
 MonoBehaviour:
