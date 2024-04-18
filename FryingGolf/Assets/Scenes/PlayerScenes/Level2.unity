@@ -735,12 +735,12 @@ PrefabInstance:
     - target: {fileID: 2832475042470440758, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000007499335
+      value: -0.00000004944615
       objectReference: {fileID: 0}
     - target: {fileID: 2832475042470440758, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000054100107
+      value: 0.00000003567038
       objectReference: {fileID: 0}
     - target: {fileID: 3083429753483732932, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
@@ -785,12 +785,12 @@ PrefabInstance:
     - target: {fileID: 5981893768675214795, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00000003733796
+      value: -0.00000003733796
       objectReference: {fileID: 0}
     - target: {fileID: 5981893768675214795, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000028275126
+      value: 0.000000028275126
       objectReference: {fileID: 0}
     - target: {fileID: 6907884944024806861, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
@@ -820,12 +820,12 @@ PrefabInstance:
     - target: {fileID: 6907884944024806861, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00000003118725
+      value: -0.00000003118725
       objectReference: {fileID: 0}
     - target: {fileID: 6907884944024806861, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000010476208
+      value: 0.000000010476208
       objectReference: {fileID: 0}
     - target: {fileID: 6907884944024806861, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
@@ -870,12 +870,12 @@ PrefabInstance:
     - target: {fileID: 8071630758591255116, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000034234315
+      value: -0.000000034234322
       objectReference: {fileID: 0}
     - target: {fileID: 8071630758591255116, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000272026
+      value: 0.000000027202605
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2417,13 +2417,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5610901321069452938, guid: 7e9c94d216f9fbb4b8ac6a5bd9e63d0d,
         type: 3}
+      propertyPath: m_LocalScale.y
+      value: 6.3203497
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610901321069452938, guid: 7e9c94d216f9fbb4b8ac6a5bd9e63d0d,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: -55.9
       objectReference: {fileID: 0}
     - target: {fileID: 5610901321069452938, guid: 7e9c94d216f9fbb4b8ac6a5bd9e63d0d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.3
+      value: -10.8
       objectReference: {fileID: 0}
     - target: {fileID: 5610901321069452938, guid: 7e9c94d216f9fbb4b8ac6a5bd9e63d0d,
         type: 3}
@@ -2588,7 +2593,7 @@ PrefabInstance:
         type: 3}
       propertyPath: respawnPoint
       value: 
-      objectReference: {fileID: 2071152709}
+      objectReference: {fileID: 1789690320}
     - target: {fileID: 4166718457951324510, guid: 92cc41ff99076dc48b41534cded11e8f,
         type: 3}
       propertyPath: SpawnPoint
@@ -5356,12 +5361,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2047728348}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &2071152709 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 460846530724310726, guid: 2aff107627e60034ea437ad0e6989f8b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1789690319}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2092837018 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7391788683840479632, guid: 5f8aef4b6f7dbaa459f85d6224b304e4,

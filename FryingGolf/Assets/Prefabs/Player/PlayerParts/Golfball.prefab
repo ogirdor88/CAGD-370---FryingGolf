@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4641298004361844743}
-  respawnPoint: {fileID: 460846530724310726, guid: 2aff107627e60034ea437ad0e6989f8b,
+  respawnPoint: {fileID: 478947556049854072, guid: 2aff107627e60034ea437ad0e6989f8b,
     type: 3}
   isWaterColliding: 0
 --- !u!114 &6786272681744152228
