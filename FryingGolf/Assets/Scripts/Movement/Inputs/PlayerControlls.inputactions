@@ -92,6 +92,56 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "CameraMove",
+            "id": "3e542f7d-a5c6-4708-a6ff-70372669eef6",
+            "actions": [
+                {
+                    "name": "move",
+                    "type": "Value",
+                    "id": "d3f229d7-97a3-4d05-8439-89d757e45d54",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "1D Axis",
+                    "id": "4bf93a77-4481-4e7a-8c42-1fe6c756ea06",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "3aee0efa-00a7-4413-a54d-10285d1d065a",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "882e1b02-8866-486a-801a-bf1e08e79d16",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
         }
     ],
     "controlSchemes": []

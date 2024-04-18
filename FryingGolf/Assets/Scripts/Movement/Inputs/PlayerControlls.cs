@@ -114,6 +114,56 @@ public partial class @PlayerControlls: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""CameraMove"",
+            ""id"": ""3e542f7d-a5c6-4708-a6ff-70372669eef6"",
+            ""actions"": [
+                {
+                    ""name"": ""move"",
+                    ""type"": ""Value"",
+                    ""id"": ""d3f229d7-97a3-4d05-8439-89d757e45d54"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""4bf93a77-4481-4e7a-8c42-1fe6c756ea06"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""3aee0efa-00a7-4413-a54d-10285d1d065a"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""882e1b02-8866-486a-801a-bf1e08e79d16"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -122,6 +172,9 @@ public partial class @PlayerControlls: IInputActionCollection2, IDisposable
         m_PlayerMove = asset.FindActionMap("PlayerMove", throwIfNotFound: true);
         m_PlayerMove_Move = m_PlayerMove.FindAction("Move", throwIfNotFound: true);
         m_PlayerMove_Jump = m_PlayerMove.FindAction("Jump", throwIfNotFound: true);
+        // CameraMove
+        m_CameraMove = asset.FindActionMap("CameraMove", throwIfNotFound: true);
+        m_CameraMove_move = m_CameraMove.FindAction("move", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -233,9 +286,59 @@ public partial class @PlayerControlls: IInputActionCollection2, IDisposable
         }
     }
     public PlayerMoveActions @PlayerMove => new PlayerMoveActions(this);
+
+    // CameraMove
+    private readonly InputActionMap m_CameraMove;
+    private List<ICameraMoveActions> m_CameraMoveActionsCallbackInterfaces = new List<ICameraMoveActions>();
+    private readonly InputAction m_CameraMove_move;
+    public struct CameraMoveActions
+    {
+        private @PlayerControlls m_Wrapper;
+        public CameraMoveActions(@PlayerControlls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @move => m_Wrapper.m_CameraMove_move;
+        public InputActionMap Get() { return m_Wrapper.m_CameraMove; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(CameraMoveActions set) { return set.Get(); }
+        public void AddCallbacks(ICameraMoveActions instance)
+        {
+            if (instance == null || m_Wrapper.m_CameraMoveActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_CameraMoveActionsCallbackInterfaces.Add(instance);
+            @move.started += instance.OnMove;
+            @move.performed += instance.OnMove;
+            @move.canceled += instance.OnMove;
+        }
+
+        private void UnregisterCallbacks(ICameraMoveActions instance)
+        {
+            @move.started -= instance.OnMove;
+            @move.performed -= instance.OnMove;
+            @move.canceled -= instance.OnMove;
+        }
+
+        public void RemoveCallbacks(ICameraMoveActions instance)
+        {
+            if (m_Wrapper.m_CameraMoveActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(ICameraMoveActions instance)
+        {
+            foreach (var item in m_Wrapper.m_CameraMoveActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_CameraMoveActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public CameraMoveActions @CameraMove => new CameraMoveActions(this);
     public interface IPlayerMoveActions
     {
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+    }
+    public interface ICameraMoveActions
+    {
+        void OnMove(InputAction.CallbackContext context);
     }
 }

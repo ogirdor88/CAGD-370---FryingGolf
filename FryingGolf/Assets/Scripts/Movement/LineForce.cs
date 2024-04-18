@@ -53,7 +53,7 @@ public class LineForce : MonoBehaviour
         //the ball is idle
         _isIdle = true;
 
-        Debug.Log("STOPPED");
+        //Debug.Log("STOPPED");
         SpawnPoint.transform.position = this.transform.position;    
     }
 
