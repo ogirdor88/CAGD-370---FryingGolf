@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1913507307}
-  m_IndirectSpecularColor: {r: 0.50115526, g: 0.49041823, b: 0.3919899, a: 1}
+  m_IndirectSpecularColor: {r: 0.15964344, g: 0.15621586, b: 0.12486945, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2244,17 +2244,17 @@ PrefabInstance:
     - target: {fileID: 8071630758591255116, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.018637717
+      value: 0.018637702
       objectReference: {fileID: 0}
     - target: {fileID: 8071630758591255116, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000059604645
+      value: 0.00000017881393
       objectReference: {fileID: 0}
     - target: {fileID: 8071630758591255116, guid: e2d014af65c9d0b4d814379f5c7e1732,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000007450581
+      value: -0.000000074505806
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3308,6 +3308,7 @@ Transform:
   m_Children:
   - {fileID: 659015135}
   - {fileID: 466899362}
+  - {fileID: 2109394121}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1199370819
@@ -5944,6 +5945,80 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 8.99, y: 11.898, z: 1.685}
+--- !u!1001 &2109394120
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1194620056}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e0e85b0a89ac3b644a0880ab6ffc58da,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.148
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0e85b0a89ac3b644a0880ab6ffc58da,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.39139986
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0e85b0a89ac3b644a0880ab6ffc58da,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.59
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0e85b0a89ac3b644a0880ab6ffc58da,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000020936131
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0e85b0a89ac3b644a0880ab6ffc58da,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.70710576
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0e85b0a89ac3b644a0880ab6ffc58da,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071079
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0e85b0a89ac3b644a0880ab6ffc58da,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000002026558
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0e85b0a89ac3b644a0880ab6ffc58da,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0e85b0a89ac3b644a0880ab6ffc58da,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e0e85b0a89ac3b644a0880ab6ffc58da,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e0e85b0a89ac3b644a0880ab6ffc58da,
+        type: 3}
+      propertyPath: m_Name
+      value: FryingPanModel
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e0e85b0a89ac3b644a0880ab6ffc58da, type: 3}
+--- !u!4 &2109394121 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e0e85b0a89ac3b644a0880ab6ffc58da,
+    type: 3}
+  m_PrefabInstance: {fileID: 2109394120}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2129321998
 GameObject:
   m_ObjectHideFlags: 0
