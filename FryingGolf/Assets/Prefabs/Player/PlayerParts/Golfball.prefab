@@ -288,8 +288,10 @@ MonoBehaviour:
   lineRenderer: {fileID: 5417021103677369108}
   stopVelocity: 0.4
   shotPower: 100
-  SpawnPoint: {fileID: 0}
+  SpawnPoint: {fileID: 478947556049854072, guid: 2aff107627e60034ea437ad0e6989f8b,
+    type: 3}
   strokeCount: 0
+  _isIdle: 0
 --- !u!114 &713178776222282803
 MonoBehaviour:
   m_ObjectHideFlags: 0
