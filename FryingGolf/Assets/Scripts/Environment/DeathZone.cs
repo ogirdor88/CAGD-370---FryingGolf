@@ -10,7 +10,7 @@ using UnityEngine;
 public class DeathZone : MonoBehaviour
 {
     public Transform player;
-    public Transform respawnPoint;
+    public GameObject respawnPoint;
     public bool isWaterColliding;
 
     private Rigidbody golfballRB;
