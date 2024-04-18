@@ -10,11 +10,38 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    /*private void OnTriggerStay(Collider other)
+    public GameObject fryingPan;
+    public GameObject golfBall;
+
+    private bool isBallIdle;
+    //private float v = 2f;
+    private float offset = 2f;
+
+    //private float ballTransform = golfBall.GetComponent<Transform>();
+
+    private void Awake()
     {
-        if (other.gameObject.tag == "Water")
+        isBallIdle = true;
+    }
+
+    private void Start()
+    {
+        fryingPan.SetActive(true);
+    }
+
+    private void Update()
+    {
+
+        //fryingPan.transform.position = golfBall.position + offset;
+
+        if (isBallIdle == false)
         {
-            Debug.Log("You are about to die.");
+            fryingPan.SetActive(false);
         }
-    }*/
+        
+        if (isBallIdle == true) 
+        {
+            fryingPan.SetActive(true);
+        }
+    }
 }
