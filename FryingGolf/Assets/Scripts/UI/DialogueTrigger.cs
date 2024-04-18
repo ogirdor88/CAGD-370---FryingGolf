@@ -19,7 +19,7 @@ public class DialogueTrigger : MonoBehaviour
       if(other.gameObject.tag=="Player")
         {
             Dialogue.SetActive(true);
-            Invoke("disapear", 6f);
+            Invoke("disapear", 4f);
         }
     }
     private void OnTriggerExit(Collider other)

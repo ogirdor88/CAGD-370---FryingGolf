@@ -9,6 +9,7 @@ TagManager:
   - Spawnpoint
   - Platform
   - Water
+  - FryingPan
   layers:
   - Default
   - TransparentFX

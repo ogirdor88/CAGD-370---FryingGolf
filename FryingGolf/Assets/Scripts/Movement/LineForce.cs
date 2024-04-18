@@ -15,7 +15,7 @@ public class LineForce : MonoBehaviour
     //Updating strokeCount in function Shootball to be used in UIManager script.
     public int strokeCount;
 
-    public bool _isIdle;
+    [SerializeField] private bool _isIdle;
     private bool _isAiming;
     private Color _color;
 
