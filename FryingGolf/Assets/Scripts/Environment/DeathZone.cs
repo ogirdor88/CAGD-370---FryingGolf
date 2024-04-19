@@ -15,6 +15,8 @@ public class DeathZone : MonoBehaviour
 
     //private Rigidbody golfballRB;
 
+    private Vector3 previousCheckpoint;
+
     //private string waterCoroutine = WaterTimer();
 
     private void FixedUpdate()
@@ -32,6 +34,10 @@ public class DeathZone : MonoBehaviour
         {
             Debug.Log("You are about to drown.");
             //Sets waterColliding boolean to true for WaterTimer to check if it is true or false
+
+            //get the last checkpoint that was used before the water landed in the water.
+            previousCheckpoint = player.GetComponent<LineForce>().SpawnPoint.transform.position;
+
             isWaterColliding = true;
             //Starts IEnumerator WaterTimer which respawns player after a certain time if the waterColliding boolean is true
             StartCoroutine("WaterTimer");
@@ -64,7 +70,7 @@ public class DeathZone : MonoBehaviour
         if (isWaterColliding == true)
         {
             Debug.Log("You drowned.");
-            player.transform.position = respawnPoint.transform.position;
+            player.transform.position = previousCheckpoint;
             //player.GetComponent<LineForce>().StopBall();
             Debug.Log("Respawned.");
         }

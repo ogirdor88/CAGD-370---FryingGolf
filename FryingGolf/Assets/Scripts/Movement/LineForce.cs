@@ -10,7 +10,7 @@ public class LineForce : MonoBehaviour
     [SerializeField]private LineRenderer lineRenderer;
     [SerializeField]private float stopVelocity = .05f;
     [SerializeField]private float shotPower;
-    [SerializeField]private GameObject SpawnPoint;
+    public GameObject SpawnPoint;
 
     //Updating strokeCount in function Shootball to be used in UIManager script.
     public int strokeCount;
@@ -55,7 +55,9 @@ public class LineForce : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Water")
+        //if (other.gameObject.tag == "Water")
+            //Debug.Log("Oiuk");
+            if (other.gameObject.tag == "Water" && _isIdle)
         {
             _isWaterColliding = false;
             //new Vector3 that holds the location of the oldSpawn point
