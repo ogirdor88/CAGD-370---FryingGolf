@@ -57,7 +57,7 @@ public class LineForce : MonoBehaviour
     {
         //if (other.gameObject.tag == "Water")
             //Debug.Log("Oiuk");
-            if (other.gameObject.tag == "Water" && _isIdle)
+        if (other.gameObject.tag == "Water" && _isIdle)
         {
             _isWaterColliding = false;
             //new Vector3 that holds the location of the oldSpawn point
@@ -67,11 +67,6 @@ public class LineForce : MonoBehaviour
 
     public void StopBall()
     {
-        if (_isWaterColliding != true)
-        {
-            SpawnPoint.transform.position = this.transform.position;
-        }
-
         //set the velocity of the ball to 0
         _rigidbody.velocity = Vector3.zero;
         _rigidbody.angularVelocity = Vector3.zero;
@@ -81,6 +76,10 @@ public class LineForce : MonoBehaviour
         _isIdle = true;
 
         //Debug.Log("STOPPED");
+        if (_isWaterColliding != true)
+        {
+            SpawnPoint.transform.position = this.transform.position;
+        }
     }
 
 
