@@ -19,6 +19,8 @@ public class LineForce : MonoBehaviour
     private bool _isAiming;
     private Color _color;
 
+    private bool _isWaterColliding;
+
     private Rigidbody _rigidbody;
 
     private void Awake()
@@ -43,8 +45,31 @@ public class LineForce : MonoBehaviour
         Aiming();
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Water")
+        {
+            _isWaterColliding = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Water")
+        {
+            _isWaterColliding = false;
+            //new Vector3 that holds the location of the oldSpawn point
+            //new Vector3 oldSpawn = ;
+        }
+    }
+
     public void StopBall()
     {
+        if (_isWaterColliding != true)
+        {
+            SpawnPoint.transform.position = this.transform.position;
+        }
+
         //set the velocity of the ball to 0
         _rigidbody.velocity = Vector3.zero;
         _rigidbody.angularVelocity = Vector3.zero;
@@ -54,7 +79,6 @@ public class LineForce : MonoBehaviour
         _isIdle = true;
 
         //Debug.Log("STOPPED");
-        SpawnPoint.transform.position = this.transform.position;    
     }
 
 

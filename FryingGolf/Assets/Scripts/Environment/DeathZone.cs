@@ -65,7 +65,7 @@ public class DeathZone : MonoBehaviour
         {
             Debug.Log("You drowned.");
             player.transform.position = respawnPoint.transform.position;
-            player.GetComponent<LineForce>().StopBall();
+            //player.GetComponent<LineForce>().StopBall();
             Debug.Log("Respawned.");
         }
         else
