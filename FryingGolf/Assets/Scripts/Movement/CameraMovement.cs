@@ -13,7 +13,7 @@ public class CameraMovement : MonoBehaviour
     //variables for moveing the camera
     private PlayerControlls input;
     [SerializeField] private float movespeed;
-    private Vector3 currentPosition;
+    //private Vector3 currentPosition;
 
     //offset is the distance between the camera and the folg ball
     private Vector3 offset;
@@ -60,16 +60,25 @@ public class CameraMovement : MonoBehaviour
         }*/
 
         //move the camera to follow the player with the offset
-        //transform.position = target.position - offset;
+        transform.position = target.position - offset;
         //make the camera look at the player
         transform.LookAt(target);
 
 
+        if (target.GetComponent<LineForce>()._isIdle == true)
+        {
+            MoveCam();
+        }
+    }
+
+    public void MoveCam()
+    {
         //rotate the camera with buttons
         float rotationDirection = input.CameraMove.move.ReadValue<float>();
-        Debug.Log(rotationDirection);
+        //Debug.Log(rotationDirection);
 
         transform.RotateAround(target.transform.position, new Vector3(0, 1, 0), rotationDirection * Time.deltaTime * rotateSpeed);
 
+        offset = target.position - transform.position;
     }
 }
