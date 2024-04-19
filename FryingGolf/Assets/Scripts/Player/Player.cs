@@ -11,28 +11,35 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public GameObject fryingPan;
-    public GameObject golfBall;
+    public Transform golfBall;
 
     private bool isBallIdle;
     //private float v = 2f;
-    private float offset = 2f;
+    //private float offset = 2f;
+
+    private Vector3 offset;
 
     //private float ballTransform = golfBall.GetComponent<Transform>();
 
     private void Awake()
     {
         isBallIdle = true;
+        fryingPan.SetActive(true);
+        offset = golfBall.position - fryingPan.transform.position;
     }
 
     private void Start()
     {
-        fryingPan.SetActive(true);
+        
     }
 
     private void Update()
     {
+        //gets LineForce _isIdle bool state and sets isBallIdle equal to it
+        isBallIdle = golfBall.GetComponent<LineForce>()._isIdle;
 
-        //fryingPan.transform.position = golfBall.position + offset;
+        //moves the fryingPan GameObject to the location of the golfBall transform at a distance, an offset
+        fryingPan.transform.position = golfBall.position - offset;
 
         if (isBallIdle == false)
         {

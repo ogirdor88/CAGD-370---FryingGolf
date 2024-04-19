@@ -13,7 +13,7 @@ public class DeathZone : MonoBehaviour
     public GameObject respawnPoint;
     public bool isWaterColliding;
 
-    private Rigidbody golfballRB;
+    //private Rigidbody golfballRB;
 
     //private string waterCoroutine = WaterTimer();
 
