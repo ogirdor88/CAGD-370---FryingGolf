@@ -20,6 +20,8 @@ public class LineForce : MonoBehaviour
     private Color _color;
 
     private bool _isWaterColliding;
+    private float oriShotPower;
+    private float oriDrag;
 
     private Rigidbody _rigidbody;
 
@@ -51,6 +53,14 @@ public class LineForce : MonoBehaviour
         {
             _isWaterColliding = true;
         }
+
+        if (other.gameObject.tag == "Sand")
+        {
+            oriShotPower = shotPower;
+            shotPower = shotPower / 3;
+            oriDrag = this.gameObject.GetComponent<Rigidbody>().drag;
+            this.gameObject.GetComponent<Rigidbody>().drag = 1.5f;
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -62,6 +72,12 @@ public class LineForce : MonoBehaviour
             _isWaterColliding = false;
             //new Vector3 that holds the location of the oldSpawn point
             //new Vector3 oldSpawn = ;
+        }
+
+        if (other.gameObject.tag == "Sand")
+        {
+            shotPower = oriShotPower;
+            this.gameObject.GetComponent<Rigidbody>().drag = oriDrag;
         }
     }
 
