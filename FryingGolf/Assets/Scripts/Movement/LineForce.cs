@@ -184,5 +184,10 @@ public class LineForce : MonoBehaviour
         {
             transform.position = new Vector3(collision.transform.position.x, transform.position.y, collision.transform.position.z);
         }
+
+        if (collision.gameObject.tag == "VPlatform" && _isIdle)
+        {
+            transform.position = new Vector3(transform.position.x, collision.transform.position.y + 1, transform.position.z);
+        }
     }
 }
