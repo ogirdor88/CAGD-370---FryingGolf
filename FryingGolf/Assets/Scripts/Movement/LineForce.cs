@@ -84,8 +84,8 @@ public class LineForce : MonoBehaviour
     public void StopBall()
     {
         //set the velocity of the ball to 0
-        _rigidbody.velocity = Vector3.zero;
-        _rigidbody.angularVelocity = Vector3.zero;
+        _rigidbody.velocity = new Vector3 (0f, _rigidbody.velocity.y, 0f);
+        _rigidbody.angularVelocity = new Vector3 (0f, _rigidbody.velocity.y, 0f);
         this.GetComponent<Renderer>().material.color = Color.green;
 
         //the ball is idle
