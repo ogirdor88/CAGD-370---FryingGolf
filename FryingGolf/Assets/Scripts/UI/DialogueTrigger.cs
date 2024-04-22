@@ -9,7 +9,9 @@ public class DialogueTrigger : MonoBehaviour
 
     // Start is called before the first frame update
     public GameObject Dialogue;
-
+    public GameObject Player;
+    public GameObject DialogueJr;
+    public float time = 2f;
     void Start()
     {
         Dialogue.SetActive(false);
@@ -18,16 +20,22 @@ public class DialogueTrigger : MonoBehaviour
     {
       if(other.gameObject.tag=="Player")
         {
+            
             Dialogue.SetActive(true);
-            Invoke("disapear", 4f);
+            //ok so after two seconds the ball can start controlling if they spawn in 
+            Invoke("disapear", time);
+            Invoke("disapear2", time);
+
+
         }
     }
     private void OnTriggerExit(Collider other)
     {
-
-        Dialogue.SetActive(false);
-
         
+        Dialogue.SetActive(false);
+       DialogueJr.SetActive(false);
+
+
     }
 
     // Update is called once per frame
@@ -38,5 +46,9 @@ public class DialogueTrigger : MonoBehaviour
     private void disapear()
     {
         Dialogue.SetActive(false);
+    }
+    public void disapear2()
+    {
+        DialogueJr.SetActive(false);
     }
 }
