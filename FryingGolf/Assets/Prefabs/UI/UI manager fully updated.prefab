@@ -407,6 +407,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3148265922952026571, guid: 74c30dc1acbbce54eaafc441ac15866f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3713049102476372548, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
       propertyPath: m_IsActive
@@ -415,7 +420,7 @@ PrefabInstance:
     - target: {fileID: 4453299366289045884, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
       propertyPath: m_Name
-      value: UIManager Variant
+      value: UI manager fully updated
       objectReference: {fileID: 0}
     - target: {fileID: 4893132785068557634, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
