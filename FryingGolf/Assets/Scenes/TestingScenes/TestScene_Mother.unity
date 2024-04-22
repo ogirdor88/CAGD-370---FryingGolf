@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1574612847}
-  m_IndirectSpecularColor: {r: 0.15964356, g: 0.15621598, b: 0.12486948, a: 1}
+  m_IndirectSpecularColor: {r: 0.15964344, g: 0.15621586, b: 0.12486945, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -555,12 +555,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1811783292}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -17.844}
---- !u!4 &354481752 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7132592825192883855, guid: 0d5ebe47543eed7449bfef6525f044c4,
-    type: 3}
-  m_PrefabInstance: {fileID: 6644140100183083981}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &385820557 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8544661336630339099, guid: 1b4d473784a63a1499872b9278d75a98,
@@ -2395,7 +2389,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 354481752}
+      objectReference: {fileID: 0}
     - target: {fileID: 7498822029543246084, guid: 6b8472e2b09ce3c4ab17f9e71657b1f8,
         type: 3}
       propertyPath: respawnPoint
@@ -2643,12 +2637,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5610901321069452938, guid: 7e9c94d216f9fbb4b8ac6a5bd9e63d0d,
     type: 3}
   m_PrefabInstance: {fileID: 6536847590670249566}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1750728411 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6367344415564002276, guid: 0d5ebe47543eed7449bfef6525f044c4,
-    type: 3}
-  m_PrefabInstance: {fileID: 6644140100183083981}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1811783291
 GameObject:
@@ -3492,7 +3480,7 @@ PrefabInstance:
         type: 3}
       propertyPath: strokeInt
       value: 
-      objectReference: {fileID: 1750728411}
+      objectReference: {fileID: 0}
     - target: {fileID: 4369108822427942995, guid: 3835aceb20dbbec4da5485133564e5c7,
         type: 3}
       propertyPath: m_Pivot.x
@@ -3694,7 +3682,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 354481752}
+      objectReference: {fileID: 0}
     - target: {fileID: 7501131486582339003, guid: a52248d8e4ccb174fb38f64ee9b14c96,
         type: 3}
       propertyPath: respawnPoint
@@ -3728,7 +3716,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 354481752}
+      objectReference: {fileID: 0}
     - target: {fileID: 3809873984647015112, guid: 7e9c94d216f9fbb4b8ac6a5bd9e63d0d,
         type: 3}
       propertyPath: respawnPoint
@@ -3857,11 +3845,26 @@ PrefabInstance:
       propertyPath: SpawnPoint
       value: 
       objectReference: {fileID: 1071529072}
+    - target: {fileID: 3466745929937465590, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5845161391747338145, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 1071529072}
     - target: {fileID: 6820853660255787269, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 7001056026476589772, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: SpawnPoint
+      value: 
+      objectReference: {fileID: 1071529072}
     - target: {fileID: 8058944210797245418, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: m_LocalRotation.x

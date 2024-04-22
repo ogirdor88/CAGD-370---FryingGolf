@@ -5830,11 +5830,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 492642833899064630, guid: 0d5ebe47543eed7449bfef6525f044c4,
-        type: 3}
-      propertyPath: underWaterAngularDrag
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 1697138823884882259, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: m_Name
