@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 //Author(s): Jackson, Katherine
-//Updated: 03/14/24
+//Updated: 04/21/24
 //This script handles interactions with other objects and the attached GameObject.
 
 public class Player : MonoBehaviour
@@ -18,8 +18,6 @@ public class Player : MonoBehaviour
 
     private Vector3 offset;
 
-    //private float ballTransform = golfBall.GetComponent<Transform>();
-
     private void Awake()
     {
         isAiming = false;
@@ -28,20 +26,10 @@ public class Player : MonoBehaviour
         offset = golfBall.position - fryingPan.transform.position;
     }
 
-    private void Start()
-    {
-    }
-
     private void Update()
     {
         //gets LineForce _isIdle bool state and sets isBallIdle equal to it
         isBallIdle = golfBall.GetComponent<LineForce>()._isIdle;
-
-        //sets isAiming to false on GetMouseButtonUp
-        /*if (Input.GetMouseButtonUp(0))
-        {
-            isAiming = false;
-        }*/
 
         //moves the fryingPan GameObject to the location of the golfBall transform at a distance, an offset
         fryingPan.transform.position = golfBall.position - offset;

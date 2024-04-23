@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 4c114c57812b2034fa3f9f5bc114e899,
+    type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 622b3672b43b4d14b9ee246eca8c69de,
     type: 2}
 --- !u!196 &4
@@ -1938,6 +1939,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Win Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7899530203049199271, guid: 99b8da8a199882c4e86ccce2a045193c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6690,7 +6696,7 @@ PrefabInstance:
     - target: {fileID: 863140283221420400, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
       propertyPath: m_Name
-      value: UIManager
+      value: UIManager_Final
       objectReference: {fileID: 0}
     - target: {fileID: 2875831197096041023, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
