@@ -299,5 +299,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e735a2b1d7acc24ba8a4e3d1556857a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 4465214266542920913, guid: 57315b9ab171a0840881b36ae47f3867, type: 3}
+  player: {fileID: 0}
   newSceneIndex: 0

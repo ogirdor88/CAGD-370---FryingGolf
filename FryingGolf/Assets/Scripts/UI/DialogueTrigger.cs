@@ -3,25 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
-{//Author(s):  Uribe-Hernandez, Fernando
- //Updated: 04/17/24
- //This script manages dialogue trigger boxes
+{//Author(s): Uribe-Hernandez, Fernando, Jackson, Katherine
+ //Updated: 04/24/24
+ //This script manages dialogue trigger boxes.
 
     // Start is called before the first frame update
-    public GameObject Dialogue;
+    public GameObject DialogueText;
     public GameObject Player;
-    public GameObject DialogueJr;
+    public GameObject DialogueCollider;
     public float time = 2f;
     void Start()
     {
-        Dialogue.SetActive(false);
+        DialogueText.SetActive(false);
     }
     private void OnTriggerEnter(Collider other)
     {
       if(other.gameObject.tag=="Player")
         {
             
-            Dialogue.SetActive(true);
+            DialogueText.SetActive(true);
             //ok so after two seconds the ball can start controlling if they spawn in 
             Invoke("disapear", time);
             Invoke("disapear2", time);
@@ -29,14 +29,15 @@ public class DialogueTrigger : MonoBehaviour
 
         }
     }
-    private void OnTriggerExit(Collider other)
+
+    //This is being edited out because,
+    //if the player exits the collider too quickly, then they will not be able to read the text.
+    /*private void OnTriggerExit(Collider other)
     {
         
-        Dialogue.SetActive(false);
-       DialogueJr.SetActive(false);
-
-
-    }
+        DialogueText.SetActive(false);
+        DialogueCollider.SetActive(false);
+    }*/
 
     // Update is called once per frame
     void Update()
@@ -45,10 +46,10 @@ public class DialogueTrigger : MonoBehaviour
     }
     private void disapear()
     {
-        Dialogue.SetActive(false);
+        DialogueText.SetActive(false);
     }
     public void disapear2()
     {
-        DialogueJr.SetActive(false);
+        DialogueCollider.SetActive(false);
     }
 }
