@@ -9,7 +9,7 @@ using JetBrains.Annotations;
 //using UnityEditor.Experimental.GraphView;
 
 //Author(s): Jackson, Katherine; Uribe-Hernandez, Fernando
-//Updated: 04/09/24
+//Updated: 04/24/24
 //This script executes all code relevant to player information between levels.
 
 public class UIManager : MonoBehaviour
@@ -17,10 +17,23 @@ public class UIManager : MonoBehaviour
     //GameObject strokeCounter;  
     public TextMeshProUGUI strokeText;
     private int stroke;
+    public TextMeshProUGUI eggText;
+    private int eggCollected;
 
-    //Referencing LineForce script and Golfball prefab GameObject for variables
+    //Referencing LineForce script on Golfball prefab GameObject for variables
     LineForce updateStrokeOnHit;
     [SerializeField] GameObject strokeInt;
+
+    //Referencing Player script on Golfball GameObject for variables
+    Player updateCollectibleCount;
+    [SerializeField] GameObject eggInt;
+
+    //variables storing the total collectible count by scene
+    private int TestScene = 1;
+    [SerializeField] int LevelOne = 2;
+    [SerializeField] int LevelTwo = 3;
+    [SerializeField] int LevelThree = 4;
+    [SerializeField] int LevelFour = 5;
 
     //Warning Text variables
     public Text warningText;
@@ -31,22 +44,35 @@ public class UIManager : MonoBehaviour
     //private float timeappear = 6f;
     //private float disapear;
 
-    private void Start()
-    {
-        warningText.enabled = false;
-        warningText2.enabled = false;
-        warningText3.enabled = false;
-       warningText4.enabled = false;
-        warningText5.enabled = false;
-       
-       
-    }
     private void Awake()
     {
         strokeText.text = "Strokes 0";
         //to get the stroke from GameObject containing LineForce script
         updateStrokeOnHit = strokeInt.GetComponent<LineForce>();
-        
+
+        //to get the egg collected count from GameObject containing Player script
+        updateCollectibleCount = eggInt.GetComponent<Player>();
+
+        eggText.text = "Sunny-Side Up Eggs Found 0/" + TestScene;
+
+        //intializing the starting total collectible count
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+            eggText.text = "Sunny-Side Up Eggs Found 0/" + LevelOne;
+        if (SceneManager.GetActiveScene().buildIndex == 3)
+            eggText.text = "Sunny-Side Up Eggs Found 0/" + LevelTwo;
+        if (SceneManager.GetActiveScene().buildIndex == 4)
+            eggText.text = "Sunny-Side Up Eggs Found 0/" + LevelThree;
+        /*if (SceneManager.GetActiveScene().buildIndex == 5)
+            eggText.text = "Sunny-Side Up Eggs Found 0/" + LevelFour;*/
+    }
+
+    private void Start()
+    {
+        warningText.enabled = false;
+        warningText2.enabled = false;
+        warningText3.enabled = false;
+        warningText4.enabled = false;
+        warningText5.enabled = false;   
     }
 
     private void Update()
@@ -59,7 +85,20 @@ public class UIManager : MonoBehaviour
     {
         stroke = updateStrokeOnHit.strokeCount;
         strokeText.text = "Strokes " + stroke.ToString();
-          
+
+        eggCollected = updateCollectibleCount.eggCount;
+
+        eggText.text = "Sunny-Side Up Eggs Found " + eggCollected.ToString() + "/" + TestScene;
+
+        //updates collectibles with max collectibles based on current buildIndex
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+            eggText.text = "Sunny-Side Up Eggs Found " + eggCollected.ToString() + "/" + LevelOne;
+        if (SceneManager.GetActiveScene().buildIndex == 3)
+            eggText.text = "Sunny-Side Up Eggs Found " + eggCollected.ToString() + "/" + LevelTwo;
+        if (SceneManager.GetActiveScene().buildIndex == 4)
+            eggText.text = "Sunny-Side Up Eggs Found " + eggCollected.ToString() + "/" + LevelThree;
+        /*if (SceneManager.GetActiveScene().buildIndex == 5)
+            eggText.text = "Sunny-Side Up Eggs Found " + eggCollected.ToString() + "/" + LevelFour;*/
     }
   private void Warnings()
     {
@@ -68,12 +107,8 @@ public class UIManager : MonoBehaviour
             warningText.enabled = true;
             print("text was enabled");
             //Invoke("Disapearableation", 6f);
-
    
             //warningText.enabled= false;
-
-
-
         }
         else
         {

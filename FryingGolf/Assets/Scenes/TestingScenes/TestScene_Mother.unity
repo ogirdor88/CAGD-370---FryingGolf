@@ -1200,11 +1200,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1662092534}
     m_Modifications:
-    - target: {fileID: -9115575933200372966, guid: 41c510e4d983a8e4cae43ef4550072bf,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 398232972163620821, guid: 41c510e4d983a8e4cae43ef4550072bf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4537,6 +4532,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4259476076072062441, guid: 74c30dc1acbbce54eaafc441ac15866f,
+        type: 3}
+      propertyPath: m_Text
+      value: Welcome to the obstacles!
+      objectReference: {fileID: 0}
     - target: {fileID: 4453299366289045884, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
       propertyPath: m_Name
@@ -4647,6 +4647,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5399299050096479013, guid: 74c30dc1acbbce54eaafc441ac15866f,
+        type: 3}
+      propertyPath: eggInt
+      value: 
+      objectReference: {fileID: 6644140100183083982}
     - target: {fileID: 5399299050096479013, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
       propertyPath: strokeInt

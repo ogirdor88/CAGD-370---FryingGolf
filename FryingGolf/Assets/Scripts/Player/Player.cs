@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 //Author(s): Jackson, Katherine
-//Updated: 04/21/24
+//Updated: 04/24/24
 //This script handles interactions with other objects and the attached GameObject.
 
 public class Player : MonoBehaviour
@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     private bool isAiming;
 
     private Vector3 offset;
+
+    [SerializeField] public int eggCount;
 
     private void Awake()
     {
@@ -69,6 +71,15 @@ public class Player : MonoBehaviour
         if (isBallIdle)
         {
             isAiming = true;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Collectible")
+        {
+            eggCount++;
+            Destroy(other.gameObject);
         }
     }
 

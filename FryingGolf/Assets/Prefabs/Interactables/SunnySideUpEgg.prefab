@@ -11,22 +11,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5e0aacc8de688464a88607e6e004bf19,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 7.78
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e0aacc8de688464a88607e6e004bf19,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e0aacc8de688464a88607e6e004bf19,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 21.22
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e0aacc8de688464a88607e6e004bf19,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071072
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e0aacc8de688464a88607e6e004bf19,
         type: 3}
@@ -41,7 +41,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5e0aacc8de688464a88607e6e004bf19,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.7071065
+      value: -0.70710677
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e0aacc8de688464a88607e6e004bf19,
         type: 3}
@@ -63,10 +63,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SunnySideUpEgg
       objectReference: {fileID: 0}
-    - target: {fileID: 3451118302482216456, guid: 5e0aacc8de688464a88607e6e004bf19,
+    - target: {fileID: 919132149155446097, guid: 5e0aacc8de688464a88607e6e004bf19,
         type: 3}
-      propertyPath: m_Convex
-      value: 0
+      propertyPath: m_TagString
+      value: Collectible
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: 5e0aacc8de688464a88607e6e004bf19,
         type: 3}
@@ -108,7 +108,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

@@ -12,6 +12,7 @@ TagManager:
   - FryingPan
   - Sand
   - VPlatform
+  - Collectible
   layers:
   - Default
   - TransparentFX

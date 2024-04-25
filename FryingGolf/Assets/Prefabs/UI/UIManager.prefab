@@ -2045,7 +2045,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strokeText: {fileID: 313295988994195340}
+  eggText: {fileID: 7413983036182253794}
   strokeInt: {fileID: 0}
+  eggInt: {fileID: 0}
   warningText: {fileID: 5287449620693021429}
   warningText2: {fileID: 2296710921329249940}
   warningText3: {fileID: 8143923765967368611}

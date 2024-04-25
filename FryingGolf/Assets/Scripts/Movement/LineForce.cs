@@ -6,7 +6,6 @@ using UnityEngine.Experimental.AI;
 
 public class LineForce : MonoBehaviour
 {
-
     [SerializeField]private LineRenderer lineRenderer;
     [SerializeField]private float stopVelocity = .05f;
     [SerializeField]private float shotPower;
