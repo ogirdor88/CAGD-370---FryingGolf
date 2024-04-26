@@ -33,9 +33,12 @@ public class UIManager : MonoBehaviour
     [SerializeField] int LevelOne = 2;
     [SerializeField] int LevelTwo = 3;
     [SerializeField] int LevelThree = 4;
-    [SerializeField] int LevelFour = 5;
+    //[SerializeField] int LevelFour = 5;
 
     //Warning Text variables
+    [SerializeField] GameObject deathMenu;
+    [SerializeField] GameObject golfBallIdle;
+    private bool isBallIdle;
     public Text warningText;
     public Text warningText2;
     public Text warningText3;
@@ -78,6 +81,7 @@ public class UIManager : MonoBehaviour
     private void Update()
     {
         SetUIText();
+        isBallIdle = golfBallIdle.GetComponent<LineForce>()._isIdle;
         Warnings();
     }
 
@@ -102,10 +106,11 @@ public class UIManager : MonoBehaviour
     }
   private void Warnings()
     {
+        //Stroke 10
         if (strokeText.text == "Strokes 10")//&& true
         {
             warningText.enabled = true;
-            print("text was enabled");
+            //print("text was enabled");
             //Invoke("Disapearableation", 6f);
    
             //warningText.enabled= false;
@@ -113,56 +118,66 @@ public class UIManager : MonoBehaviour
         else
         {
             warningText.enabled = false;
-            print("Text was disabled");
+            //print("Text was disabled");
         }
-        
+        //Stroke 11
         if (strokeText.text == "Strokes 11")
         {
             warningText2.enabled = true;
-            print("text was enabled");
+            //print("text was enabled");
             
         }
         else
         {
             warningText2.enabled = false;
-            print("Text was disabled");
+            //print("Text was disabled");
         }
+        //Stroke 12
         if (strokeText.text == "Strokes 12")
         {
             warningText3.enabled = true;
-            print("text was enabled");
+            //print("text was enabled");
             
         }
         else
         {
             warningText3.enabled = false;
-            print("Text was disabled");
+            //print("Text was disabled");
         }
+        //Stroke 13
         if (strokeText.text == "Strokes 13")
         {
             warningText4.enabled = true;
-            print("text was enabled");
+            //print("text was enabled");
             
         }
         else
         {
             warningText4.enabled = false;
-            print("Text was disabled");
+            //print("Text was disabled");
         }
+        //Stroke 14
         if (strokeText.text == "Strokes 14")
         {
             warningText5.enabled = true;
-            print("text was enabled");
+            //print("text was enabled");
            
 
         }
         else
         {
             warningText5.enabled = false;
-            print("Text was disabled");
+            //print("Text was disabled");
         }
 
+        //Stroke 15 (They have lost)
+        if (strokeText.text == "Strokes 15" && isBallIdle == true)
+        {
+            deathMenu.SetActive(true);
+            Time.timeScale = 0f;
+        }
     }
+
     public void Disapearableation()
     {
         if(warningText.enabled==true)

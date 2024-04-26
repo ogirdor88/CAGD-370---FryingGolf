@@ -20,9 +20,10 @@ public class Sceneswitch : MonoBehaviour
         
         
     }
+
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag=="Player")
+        if (collision.gameObject.tag == "Player")
         {
             SwitchScene();
             print("Scene has been changed");
@@ -35,7 +36,7 @@ public class Sceneswitch : MonoBehaviour
     private void Awake()
     {
        
-        GameObject[]golfball=GameObject.FindGameObjectsWithTag("Player");
+        /*GameObject[]golfball=GameObject.FindGameObjectsWithTag("Player");
         if(golfball.Length> 1)
         {
             Destroy(player);
@@ -43,7 +44,7 @@ public class Sceneswitch : MonoBehaviour
         else
         {
             DontDestroyOnLoad(player);
-        }
+        }*/
     }
     //Handles what scene the player is placed into next.
     //Is placed on the Goal Check GameObject in the Golf goal post Prefab
