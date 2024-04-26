@@ -1200,6 +1200,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1662092534}
     m_Modifications:
+    - target: {fileID: -9115575933200372966, guid: 41c510e4d983a8e4cae43ef4550072bf,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 398232972163620821, guid: 41c510e4d983a8e4cae43ef4550072bf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1258,7 +1263,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1066542134369797487, guid: 41c510e4d983a8e4cae43ef4550072bf,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1910753117}
   m_SourcePrefab: {fileID: 100100000, guid: 41c510e4d983a8e4cae43ef4550072bf, type: 3}
 --- !u!1001 &748803649
 PrefabInstance:
@@ -1849,6 +1858,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1811783292}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &940504012 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1066542134369797487, guid: 41c510e4d983a8e4cae43ef4550072bf,
+    type: 3}
+  m_PrefabInstance: {fileID: 717678291}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &973414660 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f28a70591c0364e438e49737f3e1e2cb,
@@ -3667,6 +3682,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 717678291}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1910753117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940504012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d4e12e8be4ef66488b66625975430c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1924785410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4657,10 +4684,20 @@ PrefabInstance:
       propertyPath: strokeInt
       value: 
       objectReference: {fileID: 6644140100183083982}
+    - target: {fileID: 5817307485815659532, guid: 74c30dc1acbbce54eaafc441ac15866f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -19.999878
+      objectReference: {fileID: 0}
     - target: {fileID: 7879549740491556446, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8104423366416470592, guid: 74c30dc1acbbce54eaafc441ac15866f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -19.999878
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
