@@ -10,14 +10,34 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
+    [SerializeField] GameObject pauseInfo;
+    [SerializeField] GameObject deathMenu;
+    private bool _isDead;
+
+    private void Awake()
+    {
+        Time.timeScale = 1f;
+        _isDead = false;
+    }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        _isDead = deathMenu.activeSelf;
+
+        if (_isDead != true)
         {
-            pauseMenu.SetActive(true);
-            Time.timeScale = 0f;
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                pauseMenu.SetActive(true);
+                Time.timeScale = 0f;
+            }
         }
+        else
+        {
+            pauseMenu.SetActive(false);
+            pauseInfo.SetActive(false);
+        }
+
     }
 
     public void ExitButton()
@@ -35,7 +55,7 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(sceneID);
     }
 
-    //Pause Menu UI
+    //Pause/Death Menu UI
     public void Pause()
     {
         pauseMenu.SetActive(true);
@@ -49,7 +69,7 @@ public class Menu : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    //Pause Menu UI
+    //Pause/Death Menu UI
     public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -57,7 +77,7 @@ public class Menu : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    //Pause Menu UI
+    //Pause/Death Menu UI
     public void Home(int sceneID)
     {
         Time.timeScale = 1f;
