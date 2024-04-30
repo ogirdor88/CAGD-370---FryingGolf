@@ -127,6 +127,24 @@ public partial class @PlayerControlls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""ChangeHeight"",
+                    ""type"": ""Button"",
+                    ""id"": ""a5d309ea-3fcd-4e3e-a8aa-ec5d49da7062"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""changeCam"",
+                    ""type"": ""Button"",
+                    ""id"": ""5c8c8580-9556-4f50-85aa-6c9211c1ba5c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -162,6 +180,50 @@ public partial class @PlayerControlls: IInputActionCollection2, IDisposable
                     ""action"": ""move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""a6f6abfb-ead1-4de6-9a7a-e839d8cadbe1"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ChangeHeight"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""fef5fbb3-5035-4512-8ff7-db0cadeb2410"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ChangeHeight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""ee064bf5-9c8b-4286-90ae-7261c14cede1"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ChangeHeight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4b47ee81-296b-4ab3-8278-533c752f6d95"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""changeCam"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -175,6 +237,8 @@ public partial class @PlayerControlls: IInputActionCollection2, IDisposable
         // CameraMove
         m_CameraMove = asset.FindActionMap("CameraMove", throwIfNotFound: true);
         m_CameraMove_move = m_CameraMove.FindAction("move", throwIfNotFound: true);
+        m_CameraMove_ChangeHeight = m_CameraMove.FindAction("ChangeHeight", throwIfNotFound: true);
+        m_CameraMove_changeCam = m_CameraMove.FindAction("changeCam", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -291,11 +355,15 @@ public partial class @PlayerControlls: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_CameraMove;
     private List<ICameraMoveActions> m_CameraMoveActionsCallbackInterfaces = new List<ICameraMoveActions>();
     private readonly InputAction m_CameraMove_move;
+    private readonly InputAction m_CameraMove_ChangeHeight;
+    private readonly InputAction m_CameraMove_changeCam;
     public struct CameraMoveActions
     {
         private @PlayerControlls m_Wrapper;
         public CameraMoveActions(@PlayerControlls wrapper) { m_Wrapper = wrapper; }
         public InputAction @move => m_Wrapper.m_CameraMove_move;
+        public InputAction @ChangeHeight => m_Wrapper.m_CameraMove_ChangeHeight;
+        public InputAction @changeCam => m_Wrapper.m_CameraMove_changeCam;
         public InputActionMap Get() { return m_Wrapper.m_CameraMove; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -308,6 +376,12 @@ public partial class @PlayerControlls: IInputActionCollection2, IDisposable
             @move.started += instance.OnMove;
             @move.performed += instance.OnMove;
             @move.canceled += instance.OnMove;
+            @ChangeHeight.started += instance.OnChangeHeight;
+            @ChangeHeight.performed += instance.OnChangeHeight;
+            @ChangeHeight.canceled += instance.OnChangeHeight;
+            @changeCam.started += instance.OnChangeCam;
+            @changeCam.performed += instance.OnChangeCam;
+            @changeCam.canceled += instance.OnChangeCam;
         }
 
         private void UnregisterCallbacks(ICameraMoveActions instance)
@@ -315,6 +389,12 @@ public partial class @PlayerControlls: IInputActionCollection2, IDisposable
             @move.started -= instance.OnMove;
             @move.performed -= instance.OnMove;
             @move.canceled -= instance.OnMove;
+            @ChangeHeight.started -= instance.OnChangeHeight;
+            @ChangeHeight.performed -= instance.OnChangeHeight;
+            @ChangeHeight.canceled -= instance.OnChangeHeight;
+            @changeCam.started -= instance.OnChangeCam;
+            @changeCam.performed -= instance.OnChangeCam;
+            @changeCam.canceled -= instance.OnChangeCam;
         }
 
         public void RemoveCallbacks(ICameraMoveActions instance)
@@ -340,5 +420,7 @@ public partial class @PlayerControlls: IInputActionCollection2, IDisposable
     public interface ICameraMoveActions
     {
         void OnMove(InputAction.CallbackContext context);
+        void OnChangeHeight(InputAction.CallbackContext context);
+        void OnChangeCam(InputAction.CallbackContext context);
     }
 }

@@ -160,6 +160,7 @@ public class LineForce : MonoBehaviour
         lineRenderer.enabled = true;
 
     }
+
     private Vector3? MouseRay()
     {
         Vector3 screenMousPositionFar = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.farClipPlane);
