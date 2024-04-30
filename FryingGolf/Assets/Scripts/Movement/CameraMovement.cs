@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Unity.Mathematics;
 using UnityEngine;
+using static UnityEngine.InputSystem.InputAction;
 
 public class CameraMovement : MonoBehaviour
 {
@@ -21,6 +22,15 @@ public class CameraMovement : MonoBehaviour
     [SerializeField]
     private float rotateSpeed;
 
+    [SerializeField]
+    private float heightSpeed;
+
+    [SerializeField]
+    private Camera followCam;
+
+    [SerializeField]
+    private Camera mapCam;
+
     private void Awake()
     {
         //get the offset from the camera and the ball
@@ -28,6 +38,9 @@ public class CameraMovement : MonoBehaviour
 
         input = new PlayerControlls();
         input.CameraMove.Enable();
+
+        followCam.enabled = true;
+        mapCam.enabled = false;
     }
     // Start is called before the first frame update
     void Start()
@@ -69,6 +82,9 @@ public class CameraMovement : MonoBehaviour
         {
             MoveCam();
         }
+
+        if (input.CameraMove.changeCam.triggered)
+            SwitchCam();
     }
 
     public void MoveCam()
@@ -77,8 +93,23 @@ public class CameraMovement : MonoBehaviour
         float rotationDirection = input.CameraMove.move.ReadValue<float>();
         //Debug.Log(rotationDirection);
 
+        float changeHeight = input.CameraMove.ChangeHeight.ReadValue<float>();
+
         transform.RotateAround(target.transform.position, new Vector3(0, 1, 0), rotationDirection * Time.deltaTime * rotateSpeed);
 
-        offset = target.position - transform.position;
+        if(transform.position.y >= target.transform.position.y)
+            transform.position += new Vector3(0, changeHeight, 0) * Time.deltaTime * heightSpeed;
+
+        if (transform.position.y < target.transform.position.y)
+            transform.position += Vector3.up;
+
+
+            offset = target.position - transform.position;
+    }
+
+    private void SwitchCam()
+    {
+        mapCam.enabled = !mapCam.enabled;
+        followCam.enabled = !followCam.enabled; 
     }
 }
