@@ -232,6 +232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fryingPan: {fileID: 3466745929937465590}
   golfBall: {fileID: 1770658959129682837}
+  eggCount: 0
 --- !u!1001 &8197464586942396829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -615,6 +616,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8197464586942396829}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &4238882719963929221 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 5409025445774910232, guid: e2d014af65c9d0b4d814379f5c7e1732,
+    type: 3}
+  m_PrefabInstance: {fileID: 8197464586942396829}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7192730008787439103 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1302256390204224610, guid: e2d014af65c9d0b4d814379f5c7e1732,
@@ -636,3 +643,6 @@ MonoBehaviour:
   target: {fileID: 1770658959129682837}
   movespeed: 0
   rotateSpeed: 150
+  heightSpeed: 0
+  followCam: {fileID: 4238882719963929221}
+  mapCam: {fileID: 2337093666690372996, guid: dcf1b21c73f2c374ba78473e085d3a06, type: 3}
