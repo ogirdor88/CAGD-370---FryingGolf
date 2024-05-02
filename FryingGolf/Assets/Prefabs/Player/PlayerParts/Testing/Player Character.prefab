@@ -148,6 +148,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 010a0208226b6114ea8243fb095cda32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fryingPan: {fileID: 919132149155446097, guid: e0e85b0a89ac3b644a0880ab6ffc58da,
+    type: 3}
+  golfBall: {fileID: 0}
+  eggCount: 0
 --- !u!114 &1376434985024935268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,6 +198,18 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 0a3e7ff5-5e67-4e22-b2f0-bfab7bdc0c61
     m_ActionName: PlayerMove/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d3f229d7-97a3-4d05-8439-89d757e45d54
+    m_ActionName: CameraMove/move[/Keyboard/q,/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a5d309ea-3fcd-4e3e-a8aa-ec5d49da7062
+    m_ActionName: CameraMove/ChangeHeight[/Keyboard/s,/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5c8c8580-9556-4f50-85aa-6c9211c1ba5c
+    m_ActionName: CameraMove/changeCam[/Keyboard/m]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerMove

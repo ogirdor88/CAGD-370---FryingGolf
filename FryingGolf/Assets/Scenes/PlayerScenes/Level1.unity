@@ -1842,6 +1842,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175189002}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!20 &1346463553 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 4238882719963929221, guid: 0d5ebe47543eed7449bfef6525f044c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1964454680}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1371358507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3346,6 +3352,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 2324760931744651872, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: followCam
+      value: 
+      objectReference: {fileID: 1346463553}
     - target: {fileID: 2671077464927683309, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: m_RenderShadows
