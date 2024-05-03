@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -186,6 +186,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4259476076072062441, guid: 74c30dc1acbbce54eaafc441ac15866f,
+        type: 3}
+      propertyPath: m_Text
+      value: Welcome to the obstacles!
+      objectReference: {fileID: 0}
     - target: {fileID: 4453299366289045884, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
       propertyPath: m_Name
@@ -194,7 +199,7 @@ PrefabInstance:
     - target: {fileID: 4483148586585367289, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5110562425345973505, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
@@ -299,7 +304,7 @@ PrefabInstance:
     - target: {fileID: 5197694119569864770, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5399299050096479013, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
@@ -319,17 +324,17 @@ PrefabInstance:
     - target: {fileID: 7476056025056609080, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7702183068079441912, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7846844606991424274, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2322,7 +2327,7 @@ Terrain:
   m_DeringLightProbesForTrees: 1
   m_ReceiveGI: 1
   m_ScaleInLightmap: 0.0256
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
