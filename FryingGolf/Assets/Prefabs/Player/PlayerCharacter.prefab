@@ -189,6 +189,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786272681744152228, guid: 92cc41ff99076dc48b41534cded11e8f,
         type: 3}
+      propertyPath: floatingPower
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786272681744152228, guid: 92cc41ff99076dc48b41534cded11e8f,
+        type: 3}
       propertyPath: underWaterAngularDrag
       value: 0.5
       objectReference: {fileID: 0}
