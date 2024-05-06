@@ -4909,6 +4909,11 @@ PrefabInstance:
       propertyPath: strokeInt
       value: 
       objectReference: {fileID: 6644140100183083982}
+    - target: {fileID: 5399299050096479013, guid: 74c30dc1acbbce54eaafc441ac15866f,
+        type: 3}
+      propertyPath: golfBallIdle
+      value: 
+      objectReference: {fileID: 6644140100183083982}
     - target: {fileID: 5817307485815659532, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
