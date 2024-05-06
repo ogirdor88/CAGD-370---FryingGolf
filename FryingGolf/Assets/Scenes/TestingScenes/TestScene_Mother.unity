@@ -4770,6 +4770,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6644140100183083981}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &6644140100183083983 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1770658959129682837, guid: 0d5ebe47543eed7449bfef6525f044c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 6644140100183083981}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7824294641539933659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4908,6 +4914,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -19.999878
       objectReference: {fileID: 0}
+    - target: {fileID: 7158032939131874915, guid: 74c30dc1acbbce54eaafc441ac15866f,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 6644140100183083983}
+    - target: {fileID: 7158032939131874915, guid: 74c30dc1acbbce54eaafc441ac15866f,
+        type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 1071529072}
     - target: {fileID: 7879549740491556446, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
       propertyPath: m_IsActive

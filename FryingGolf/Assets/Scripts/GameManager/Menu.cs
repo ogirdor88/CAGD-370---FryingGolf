@@ -11,8 +11,14 @@ public class Menu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject pauseInfo;
+    [SerializeField] GameObject respawnInfo;
     [SerializeField] GameObject deathMenu;
     private bool _isDead;
+
+    //Respawn button mechanic
+    public Transform player;
+    public GameObject respawnPoint;
+    private Vector3 deadStop = new Vector3(0f, 0f, 0f);
 
     private void Awake()
     {
@@ -31,11 +37,18 @@ public class Menu : MonoBehaviour
                 pauseMenu.SetActive(true);
                 Time.timeScale = 0f;
             }
+
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                player.transform.position = respawnPoint.transform.position;
+                player.GetComponent<Rigidbody>().velocity = deadStop;
+            }
         }
         else
         {
             pauseMenu.SetActive(false);
             pauseInfo.SetActive(false);
+            respawnInfo.SetActive(false);
         }
 
     }

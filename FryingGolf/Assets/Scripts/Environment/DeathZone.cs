@@ -35,7 +35,7 @@ public class DeathZone : MonoBehaviour
             Debug.Log("You are about to drown.");
             //Sets waterColliding boolean to true for WaterTimer to check if it is true or false
 
-            //get the last checkpoint that was used before the water landed in the water.
+            //get the last checkpoint that was used before the player landed in the water.
             previousCheckpoint = player.GetComponent<LineForce>().SpawnPoint.transform.position;
 
             isWaterColliding = true;
