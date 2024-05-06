@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,10 +16,14 @@ public class Menu : MonoBehaviour
     [SerializeField] GameObject deathMenu;
     private bool _isDead;
 
+
     //Respawn button mechanic
     public Transform player;
     public GameObject respawnPoint;
     private Vector3 deadStop = new Vector3(0f, 0f, 0f);
+
+    private bool inspBool;
+    //GameObject _UITarget;
 
     private void Awake()
     {
@@ -50,7 +55,6 @@ public class Menu : MonoBehaviour
             pauseInfo.SetActive(false);
             respawnInfo.SetActive(false);
         }
-
     }
 
     public void ExitButton()
@@ -95,5 +99,27 @@ public class Menu : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneID);
+    }
+
+    //Level Selection UI
+    public void ActiveLevelUI(GameObject targetUI)
+    {
+        if (targetUI.activeInHierarchy == false)
+        {
+            targetUI.SetActive(true);
+        }
+    }
+    public void LevelSelect(int sceneID)
+    {
+        SceneManager.LoadScene(sceneID);
+    }
+
+    //Disables UI Element
+    public void DisableUI(GameObject targetUI)
+    {
+        if (targetUI.activeInHierarchy == true)
+        {
+            targetUI.SetActive(false);
+        }
     }
 }

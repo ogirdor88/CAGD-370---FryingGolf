@@ -4784,20 +4784,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4259476076072062441, guid: 74c30dc1acbbce54eaafc441ac15866f,
-        type: 3}
-      propertyPath: m_Text
-      value: Welcome to the obstacles!
-      objectReference: {fileID: 0}
     - target: {fileID: 4453299366289045884, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
       propertyPath: m_Name
       value: UIManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 4887003548244743147, guid: 74c30dc1acbbce54eaafc441ac15866f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5110562425345973505, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
@@ -4914,11 +4904,6 @@ PrefabInstance:
       propertyPath: golfBallIdle
       value: 
       objectReference: {fileID: 6644140100183083982}
-    - target: {fileID: 5817307485815659532, guid: 74c30dc1acbbce54eaafc441ac15866f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -19.999878
-      objectReference: {fileID: 0}
     - target: {fileID: 7158032939131874915, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
       propertyPath: player
@@ -4929,16 +4914,6 @@ PrefabInstance:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1071529072}
-    - target: {fileID: 7879549740491556446, guid: 74c30dc1acbbce54eaafc441ac15866f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8104423366416470592, guid: 74c30dc1acbbce54eaafc441ac15866f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -19.999878
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
