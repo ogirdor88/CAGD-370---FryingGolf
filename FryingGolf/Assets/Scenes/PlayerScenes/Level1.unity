@@ -937,6 +937,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450674353}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &608513250 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7712484872488827056, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1382326294}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &653421783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,6 +1958,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIManager [Final]
       objectReference: {fileID: 0}
+    - target: {fileID: 6152269651450494575, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1964454682}
+    - target: {fileID: 6152269651450494575, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 1667571413}
     - target: {fileID: 8132213246706568461, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2052,9 +2068,39 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: eggInt
+      value: 
+      objectReference: {fileID: 1964454681}
+    - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: strokeInt
+      value: 
+      objectReference: {fileID: 1964454681}
+    - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: golfBallIdle
+      value: 
+      objectReference: {fileID: 1964454681}
+    - target: {fileID: 9182700872386633193, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: eggInt
+      value: 
+      objectReference: {fileID: 1964454681}
+    - target: {fileID: 9182700872386633193, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: deathMenu
+      value: 
+      objectReference: {fileID: 608513250}
     - target: {fileID: 9182700872386633193, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
       propertyPath: strokeInt
+      value: 
+      objectReference: {fileID: 1964454681}
+    - target: {fileID: 9182700872386633193, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: golfBallIdle
       value: 
       objectReference: {fileID: 1964454681}
     m_RemovedComponents: []
@@ -3485,6 +3531,12 @@ PrefabInstance:
 --- !u!1 &1964454681 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2464579030068033278, guid: 0d5ebe47543eed7449bfef6525f044c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1964454680}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1964454682 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1770658959129682837, guid: 0d5ebe47543eed7449bfef6525f044c4,
     type: 3}
   m_PrefabInstance: {fileID: 1964454680}
   m_PrefabAsset: {fileID: 0}
