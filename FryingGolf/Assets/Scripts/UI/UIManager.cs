@@ -33,7 +33,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] int LevelOne = 2;
     [SerializeField] int LevelTwo = 3;
     [SerializeField] int LevelThree = 4;
-    //[SerializeField] int LevelFour = 5;
+    [SerializeField] int LevelFour = 5;
+    [SerializeField] int LevelFive = 6;
 
     //Warning Text variables
     [SerializeField] GameObject deathMenu;
@@ -65,6 +66,10 @@ public class UIManager : MonoBehaviour
             eggText.text = "Sunny-Side Up Eggs Found 0/" + LevelTwo;
         if (SceneManager.GetActiveScene().buildIndex == 4)
             eggText.text = "Sunny-Side Up Eggs Found 0/" + LevelThree;
+        if (SceneManager.GetActiveScene().buildIndex == 5)
+            eggText.text = "Sunny-Side Up Eggs Found 0/" + LevelFour;
+        if (SceneManager.GetActiveScene().buildIndex == 6)
+            eggText.text = "Sunny-Side Up Eggs Found 0/" + LevelFive;
         /*if (SceneManager.GetActiveScene().buildIndex == 5)
             eggText.text = "Sunny-Side Up Eggs Found 0/" + LevelFour;*/
     }
@@ -101,6 +106,10 @@ public class UIManager : MonoBehaviour
             eggText.text = "Sunny-Side Up Eggs Found " + eggCollected.ToString() + "/" + LevelTwo;
         if (SceneManager.GetActiveScene().buildIndex == 4)
             eggText.text = "Sunny-Side Up Eggs Found " + eggCollected.ToString() + "/" + LevelThree;
+        if (SceneManager.GetActiveScene().buildIndex == 5)
+            eggText.text = "Sunny-Side Up Eggs Found " + eggCollected.ToString() + "/" + LevelFour;
+        if (SceneManager.GetActiveScene().buildIndex == 6)
+            eggText.text = "Sunny-Side Up Eggs Found " + eggCollected.ToString() + "/" + LevelFive;
         /*if (SceneManager.GetActiveScene().buildIndex == 5)
             eggText.text = "Sunny-Side Up Eggs Found " + eggCollected.ToString() + "/" + LevelFour;*/
     }
