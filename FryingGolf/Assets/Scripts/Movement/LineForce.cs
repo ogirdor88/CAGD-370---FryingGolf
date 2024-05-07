@@ -24,6 +24,10 @@ public class LineForce : MonoBehaviour
 
     private Rigidbody _rigidbody;
 
+    private Vector3 initialVelocity;
+    private Vector3 lastFrameVelocity;
+    [SerializeField] private float minVelocity = 1f;
+
     private void Awake()
     {
         _color = GetComponent<Renderer>().material.color;
@@ -34,6 +38,7 @@ public class LineForce : MonoBehaviour
         _isAiming = false;
         lineRenderer.enabled = false;
         _isIdle = true;
+
     }
 
     private void FixedUpdate()
@@ -44,6 +49,7 @@ public class LineForce : MonoBehaviour
             StopBall();
         }
         Aiming();
+        lastFrameVelocity = _rigidbody.velocity;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -184,5 +190,25 @@ public class LineForce : MonoBehaviour
         {
             transform.position = new Vector3(collision.transform.position.x, transform.position.y, collision.transform.position.z);
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag != "NoBounce")
+        {
+            Bounce(collision.contacts[0].normal);
+        }
+        
+    }
+
+    private void Bounce(Vector3 collisionNormal)
+    {
+        //get the speed of the ball then it hits something 
+        var speed = lastFrameVelocity.magnitude;
+        //reflect the ball off of the object hit
+        var direction = Vector3.Reflect(lastFrameVelocity.normalized, collisionNormal);
+
+        //make the ball bounce off the object that was hit.
+        _rigidbody.velocity = direction * Mathf.Max(speed, minVelocity);
     }
 }
