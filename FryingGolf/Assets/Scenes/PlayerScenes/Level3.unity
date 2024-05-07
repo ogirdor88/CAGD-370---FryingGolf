@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 52156977}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 148571517}
   m_Layer: 0
   m_Name: Floor1
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1125,7 +1125,7 @@ GameObject:
   - component: {fileID: 223763707}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1558,7 +1558,7 @@ GameObject:
   - component: {fileID: 278498687}
   m_Layer: 0
   m_Name: Cube (11)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2170,7 +2170,7 @@ GameObject:
   - component: {fileID: 487657887}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2275,7 +2275,7 @@ GameObject:
   - component: {fileID: 492006058}
   m_Layer: 0
   m_Name: Floor2
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3435,7 +3435,7 @@ GameObject:
   - component: {fileID: 680032593}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3540,7 +3540,7 @@ GameObject:
   - component: {fileID: 735646433}
   m_Layer: 0
   m_Name: Cube (13)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3831,7 +3831,7 @@ GameObject:
   - component: {fileID: 760340501}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5837,7 +5837,7 @@ GameObject:
   - component: {fileID: 1118758913}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6405,6 +6405,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RampHump1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8921789749324938786, guid: 721050bd917fb52499b8d95385ef1f70,
+        type: 3}
+      propertyPath: m_TagString
+      value: NoBounce
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7008,6 +7013,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RampHump2
       objectReference: {fileID: 0}
+    - target: {fileID: 737932481914053386, guid: 0f14079f4f185fa4c979371c803f9d84,
+        type: 3}
+      propertyPath: m_TagString
+      value: NoBounce
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7224,7 +7234,7 @@ GameObject:
   - component: {fileID: 1403640151}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7713,7 +7723,7 @@ GameObject:
   - component: {fileID: 1465398496}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8133,7 +8143,7 @@ GameObject:
   - component: {fileID: 1599142358}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9172,7 +9182,7 @@ GameObject:
   - component: {fileID: 1739673722}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10408,7 +10418,7 @@ GameObject:
   - component: {fileID: 1884203230}
   m_Layer: 0
   m_Name: Floor1
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10668,6 +10678,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RampHump2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 737932481914053386, guid: 0f14079f4f185fa4c979371c803f9d84,
+        type: 3}
+      propertyPath: m_TagString
+      value: NoBounce
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11009,7 +11024,7 @@ GameObject:
   - component: {fileID: 2024547749}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11701,6 +11716,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RampHump1
       objectReference: {fileID: 0}
+    - target: {fileID: 8921789749324938786, guid: 721050bd917fb52499b8d95385ef1f70,
+        type: 3}
+      propertyPath: m_TagString
+      value: NoBounce
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11720,7 +11740,7 @@ GameObject:
   - component: {fileID: 2073406202}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12497,6 +12517,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GolfGoalPost_Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508159142532410520, guid: dc77ab43134e98d47b13a449efb6de0e,
+        type: 3}
+      propertyPath: m_TagString
+      value: NoBounce
       objectReference: {fileID: 0}
     - target: {fileID: 7663467214466679290, guid: dc77ab43134e98d47b13a449efb6de0e,
         type: 3}
