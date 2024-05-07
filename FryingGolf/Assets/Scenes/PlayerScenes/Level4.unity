@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1859320486}
-  m_IndirectSpecularColor: {r: 0.15964344, g: 0.15621586, b: 0.12486945, a: 1}
+  m_IndirectSpecularColor: {r: 0.15964356, g: 0.15621598, b: 0.12486948, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -551,7 +551,7 @@ GameObject:
   - component: {fileID: 113673464}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -773,6 +773,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RampHump1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8921789749324938786, guid: 721050bd917fb52499b8d95385ef1f70,
+        type: 3}
+      propertyPath: m_TagString
+      value: NoBounce
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -860,7 +865,7 @@ GameObject:
   - component: {fileID: 268971256}
   m_Layer: 0
   m_Name: Cube (9)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -965,7 +970,7 @@ GameObject:
   - component: {fileID: 284788056}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1529,6 +1534,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: VerticalPlatform
       objectReference: {fileID: 0}
+    - target: {fileID: 911496646592922236, guid: 7ed2e26238c65e844a9a4d96a3edd369,
+        type: 3}
+      propertyPath: m_TagString
+      value: NoBounce
+      objectReference: {fileID: 0}
     - target: {fileID: 934699590078542787, guid: 7ed2e26238c65e844a9a4d96a3edd369,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1821,7 +1831,7 @@ GameObject:
   - component: {fileID: 546393098}
   m_Layer: 0
   m_Name: Cube (11)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2014,7 +2024,7 @@ GameObject:
   - component: {fileID: 637316114}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2257,6 +2267,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RampHump1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8921789749324938786, guid: 721050bd917fb52499b8d95385ef1f70,
+        type: 3}
+      propertyPath: m_TagString
+      value: NoBounce
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2566,7 +2581,7 @@ GameObject:
   - component: {fileID: 766315222}
   m_Layer: 0
   m_Name: Cube (10)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2671,7 +2686,7 @@ GameObject:
   - component: {fileID: 813876511}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4306,7 +4321,7 @@ GameObject:
   - component: {fileID: 1171621816}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4514,8 +4529,8 @@ Transform:
   m_GameObject: {fileID: 1203351477}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7068103, z: -0, w: 0.70740324}
-  m_LocalPosition: {x: -124.7, y: 7.47, z: 19.5}
-  m_LocalScale: {x: 24.295303, y: 2.2810023, z: 2.5241728}
+  m_LocalPosition: {x: -124.7, y: 6.93, z: 19.5}
+  m_LocalScale: {x: 24.295303, y: 0.95651555, z: 2.5241728}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1642875022}
@@ -4933,8 +4948,8 @@ Transform:
   m_GameObject: {fileID: 1391342307}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -117, y: 7.5, z: 8.8}
-  m_LocalScale: {x: 15.237247, y: 2.2810023, z: 2.5241733}
+  m_LocalPosition: {x: -117, y: 6.92, z: 8.65}
+  m_LocalScale: {x: 15.237247, y: 0.83263427, z: 2.5241733}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1642875022}
@@ -5145,7 +5160,7 @@ GameObject:
   - component: {fileID: 1428735924}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5677,6 +5692,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RampHump1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7b640c3b49bdc64db9aa87ee7ddc37e,
+        type: 3}
+      propertyPath: m_TagString
+      value: NoBounce
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6435,7 +6455,7 @@ GameObject:
   - component: {fileID: 1831494786}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6626,7 +6646,7 @@ GameObject:
   - component: {fileID: 1866944152}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7454,13 +7474,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7001056026476589772, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
+      propertyPath: PowerLimit
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7001056026476589772, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
       propertyPath: SpawnPoint
       value: 
       objectReference: {fileID: 2083273952}
     - target: {fileID: 8793439509179431284, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -45.3
+      value: -43.8
       objectReference: {fileID: 0}
     - target: {fileID: 8793439509179431284, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
@@ -7643,8 +7668,8 @@ Transform:
   m_GameObject: {fileID: 2087327623}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -129.7, y: 7.5, z: 31}
-  m_LocalScale: {x: 12.833867, y: 2.2810023, z: 2.5241733}
+  m_LocalPosition: {x: -129.7, y: 6.95, z: 31}
+  m_LocalScale: {x: 12.833867, y: 0.89020675, z: 2.5241733}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1642875022}

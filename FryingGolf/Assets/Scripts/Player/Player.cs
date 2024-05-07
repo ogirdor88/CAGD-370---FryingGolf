@@ -108,7 +108,7 @@ public class Player : MonoBehaviour
             transform.position,
             worldpoint
         };
-        fryingPan.transform.position = new Vector3 (worldpoint.x, worldpoint.y + .75f, worldpoint.z);
+        fryingPan.transform.position = new Vector3 (worldpoint.x, gameObject.transform.position.y, worldpoint.z);
 
     }
 }

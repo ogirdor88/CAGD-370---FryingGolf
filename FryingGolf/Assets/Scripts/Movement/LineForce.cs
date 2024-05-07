@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Security;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Experimental.AI;
@@ -9,6 +10,7 @@ public class LineForce : MonoBehaviour
     [SerializeField]private LineRenderer lineRenderer;
     [SerializeField]private float stopVelocity = .05f;
     [SerializeField]private float shotPower;
+    [SerializeField]private float PowerLimit;
     public GameObject SpawnPoint;
 
     //Updating strokeCount in function Shootball to be used in UIManager script.
@@ -160,7 +162,8 @@ public class LineForce : MonoBehaviour
         Vector3[] positions =
         {
             transform.position,
-            worldpoint
+            //new Vector3( worldpoint.x, gameObject.transform.position.y, worldpoint.z)
+            Vector3.MoveTowards(transform.position, new Vector3( worldpoint.x, gameObject.transform.position.y, worldpoint.z), PowerLimit)
         };
         lineRenderer.SetPositions(positions);
         lineRenderer.enabled = true;
@@ -190,6 +193,13 @@ public class LineForce : MonoBehaviour
         {
             transform.position = new Vector3(collision.transform.position.x, transform.position.y, collision.transform.position.z);
         }
+
+        if (collision.gameObject.tag == "Momentum")
+        {
+            _isIdle = false;
+            var direction = Vector3.Reflect(lastFrameVelocity.normalized, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z));
+            _rigidbody.velocity = direction * Mathf.Max(10f, 10f);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -198,7 +208,13 @@ public class LineForce : MonoBehaviour
         {
             Bounce(collision.contacts[0].normal);
         }
-        
+
+        if (collision.gameObject.tag == "Momentum")
+        {
+            _isIdle = false;
+            var direction = Vector3.Reflect(lastFrameVelocity.normalized, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z));
+            _rigidbody.velocity = direction * Mathf.Max(10f, 10f);
+        }
     }
 
     private void Bounce(Vector3 collisionNormal)

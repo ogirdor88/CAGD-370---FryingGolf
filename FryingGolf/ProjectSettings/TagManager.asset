@@ -15,7 +15,7 @@ TagManager:
   - Collectible
   - LevelSelect
   - NoBounce
-  - Dialogue
+  - Momentum
   layers:
   - Default
   - TransparentFX

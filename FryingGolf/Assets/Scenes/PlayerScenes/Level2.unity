@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 209878956}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1900,6 +1900,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RampHump1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8921789749324938786, guid: 721050bd917fb52499b8d95385ef1f70,
+        type: 3}
+      propertyPath: m_TagString
+      value: NoBounce
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2351,6 +2356,11 @@ PrefabInstance:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1789690320}
+    - target: {fileID: 7001056026476589772, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: PowerLimit
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 7001056026476589772, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: SpawnPoint
@@ -3806,7 +3816,7 @@ GameObject:
   - component: {fileID: 1780586714}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4248,7 +4258,7 @@ GameObject:
   - component: {fileID: 1850004449}
   m_Layer: 0
   m_Name: Floor1
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
