@@ -1976,6 +1976,36 @@ PrefabInstance:
       propertyPath: golfBallIdle
       value: 
       objectReference: {fileID: 1964454681}
+    - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: WarningStroke1
+      value: Strokes 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: WarningStroke2
+      value: Strokes 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: WarningStroke3
+      value: Strokes 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: WarningStroke4
+      value: Strokes 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: WarningStroke5
+      value: Strokes 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: WarningStrokeDeath
+      value: Strokes 10
+      objectReference: {fileID: 0}
     - target: {fileID: 9182700872386633193, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
       propertyPath: eggInt

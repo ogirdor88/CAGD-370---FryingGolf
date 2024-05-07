@@ -420,7 +420,7 @@ PrefabInstance:
     - target: {fileID: 4453299366289045884, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
       propertyPath: m_Name
-      value: UI manager fully updated
+      value: UIManager_Final
       objectReference: {fileID: 0}
     - target: {fileID: 4893132785068557634, guid: 74c30dc1acbbce54eaafc441ac15866f,
         type: 3}
@@ -565,49 +565,8 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 222321929812222479}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4453299366289045884, guid: 74c30dc1acbbce54eaafc441ac15866f,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 9182700872386633193}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74c30dc1acbbce54eaafc441ac15866f, type: 3}
---- !u!1 &863140283221420400 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4453299366289045884, guid: 74c30dc1acbbce54eaafc441ac15866f,
-    type: 3}
-  m_PrefabInstance: {fileID: 3906645826815873036}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &9182700872386633193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 863140283221420400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c95936f57fffc364a9c3b8683a585107, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  strokeText: {fileID: 3633908627209908096}
-  strokeInt: {fileID: 0}
-  warningText: {fileID: 4350849429079531091}
-  warningText2: {fileID: 2441499163688718696}
-  warningText3: {fileID: 7845668478157074317}
-  warningText4: {fileID: 6308227482156760119}
-  warningText5: {fileID: 4763567216645274035}
---- !u!114 &3633908627209908096 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 313295988994195340, guid: 74c30dc1acbbce54eaafc441ac15866f,
-    type: 3}
-  m_PrefabInstance: {fileID: 3906645826815873036}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &8132213246706568461 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5110562425345973505, guid: 74c30dc1acbbce54eaafc441ac15866f,
