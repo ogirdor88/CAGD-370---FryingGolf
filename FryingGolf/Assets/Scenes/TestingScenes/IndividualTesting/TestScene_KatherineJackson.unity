@@ -125,6 +125,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &15919447 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2823451026285301534, guid: 74c30dc1acbbce54eaafc441ac15866f,
+    type: 3}
+  m_PrefabInstance: {fileID: 93466245}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &51213686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1445,7 +1451,7 @@ GameObject:
   - component: {fileID: 927728064}
   m_Layer: 0
   m_Name: Down Ramp
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2461,7 +2467,7 @@ GameObject:
   - component: {fileID: 1354052056}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2566,7 +2572,7 @@ GameObject:
   - component: {fileID: 1423817665}
   m_Layer: 0
   m_Name: Ground (2)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2954,6 +2960,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f4d1f8c28d48a34da956eed11632738, type: 3}
+--- !u!1 &1678178703 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6719214029847029948, guid: 74c30dc1acbbce54eaafc441ac15866f,
+    type: 3}
+  m_PrefabInstance: {fileID: 93466245}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1735993676
 GameObject:
   m_ObjectHideFlags: 0
@@ -3346,7 +3358,7 @@ GameObject:
   - component: {fileID: 1852225767}
   m_Layer: 0
   m_Name: Ramp
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3737,7 +3749,7 @@ GameObject:
   - component: {fileID: 1922581063}
   m_Layer: 0
   m_Name: Ground (1)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4384,6 +4396,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 336396796230633409, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: _deathMenu
+      value: 
+      objectReference: {fileID: 1678178703}
+    - target: {fileID: 336396796230633409, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: _pauseMenu
+      value: 
+      objectReference: {fileID: 15919447}
     - target: {fileID: 1697138823884882259, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: m_Name
@@ -4394,6 +4416,21 @@ PrefabInstance:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1249974447}
+    - target: {fileID: 6285967596957142901, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285967596957142901, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 96.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285967596957142901, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7001056026476589772, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: SpawnPoint

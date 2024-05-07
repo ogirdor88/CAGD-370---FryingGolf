@@ -77,7 +77,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Collectible")
+        if (other.gameObject.CompareTag("Collectible"))
         {
             eggCount++;
             Destroy(other.gameObject);

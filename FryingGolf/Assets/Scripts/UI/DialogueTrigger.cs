@@ -38,12 +38,6 @@ public class DialogueTrigger : MonoBehaviour
         DialogueText.SetActive(false);
         DialogueCollider.SetActive(false);
     }*/
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void disapear()
     {
         DialogueText.SetActive(false);

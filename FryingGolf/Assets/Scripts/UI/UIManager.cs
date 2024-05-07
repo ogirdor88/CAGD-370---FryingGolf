@@ -36,7 +36,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] int LevelFour = 1;
     [SerializeField] int LevelFive = 6;
 
-    //Warning Text variables
+    //Warning variables
     [SerializeField] GameObject deathMenu;
     [SerializeField] GameObject golfBallIdle;
     private bool isBallIdle;
@@ -45,6 +45,14 @@ public class UIManager : MonoBehaviour
     public Text warningText3;
     public Text warningText4;
     public Text warningText5;
+    [SerializeField] string WarningStroke1 = "Strokes 0";
+    [SerializeField] string WarningStroke2 = "Strokes 1";
+    [SerializeField] string WarningStroke3 = "Strokes 2";
+    [SerializeField] string WarningStroke4 = "Strokes 3";
+    [SerializeField] string WarningStroke5 = "Strokes 4";
+    [SerializeField] string WarningStrokeDeath = "Strokes 5";
+    public TextMeshProUGUI _maxStrokeLimit;
+
     //private float timeappear = 6f;
     //private float disapear;
 
@@ -53,23 +61,33 @@ public class UIManager : MonoBehaviour
         strokeText.text = "Strokes 0";
         //to get the stroke from GameObject containing LineForce script
         updateStrokeOnHit = strokeInt.GetComponent<LineForce>();
-
         //to get the egg collected count from GameObject containing Player script
         updateCollectibleCount = eggInt.GetComponent<Player>();
 
-        eggText.text = "Sunny-Side Up Eggs Found 0/" + TestScene;
+         eggText.text = "Sunny-Side Up Eggs Found 0/" + TestScene;
+        _maxStrokeLimit.text = "Level Limit: " + WarningStrokeDeath;
 
         //intializing the starting total collectible count
         if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
             eggText.text = "Sunny-Side Up Eggs Found 0/" + LevelOne;
+        }
         if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
             eggText.text = "Sunny-Side Up Eggs Found 0/" + LevelTwo;
+        }
         if (SceneManager.GetActiveScene().buildIndex == 4)
+        {
             eggText.text = "Sunny-Side Up Eggs Found 0/" + LevelThree;
+        }
         if (SceneManager.GetActiveScene().buildIndex == 5)
+        {
             eggText.text = "Sunny-Side Up Eggs Found 0/" + LevelFour;
+        }
         if (SceneManager.GetActiveScene().buildIndex == 6)
+        {
             eggText.text = "Sunny-Side Up Eggs Found 0/" + LevelFive;
+        }
     }
 
     private void Start()
@@ -113,34 +131,27 @@ public class UIManager : MonoBehaviour
     {
         if(SceneManager.GetActiveScene().buildIndex != 6)
         {
-            //Stroke 10
-            if (strokeText.text == "Strokes 20")//&& true
+            //First Warning
+            if (strokeText.text == WarningStroke1)//&& true
             {
                 warningText.enabled = true;
-                //print("text was enabled");
-                //Invoke("Disapearableation", 6f);
-
-                //warningText.enabled= false;
             }
             else
             {
                 warningText.enabled = false;
-                //print("Text was disabled");
+
             }
-            //Stroke 11
-            if (strokeText.text == "Strokes 21")
+            //Second Warning
+            if (strokeText.text == WarningStroke2)
             {
                 warningText2.enabled = true;
-                //print("text was enabled");
-
             }
             else
             {
                 warningText2.enabled = false;
-                //print("Text was disabled");
             }
-            //Stroke 12
-            if (strokeText.text == "Strokes 22")
+            //Third Warning
+            if (strokeText.text == WarningStroke3)
             {
                 warningText3.enabled = true;
                 //print("text was enabled");
@@ -149,36 +160,28 @@ public class UIManager : MonoBehaviour
             else
             {
                 warningText3.enabled = false;
-                //print("Text was disabled");
             }
-            //Stroke 13
-            if (strokeText.text == "Strokes 23")
+            //Fourth Warning
+            if (strokeText.text == WarningStroke4)
             {
                 warningText4.enabled = true;
-                //print("text was enabled");
-
             }
             else
             {
                 warningText4.enabled = false;
-                //print("Text was disabled");
             }
-            //Stroke 14
-            if (strokeText.text == "Strokes 24")
+            //Fifth Warning
+            if (strokeText.text == WarningStroke5)
             {
                 warningText5.enabled = true;
-                //print("text was enabled");
-
-
             }
             else
             {
                 warningText5.enabled = false;
-                //print("Text was disabled");
             }
 
-            //Stroke 15 (They have lost)
-            if (strokeText.text == "Strokes 25" && isBallIdle == true)
+            //Last stroke (Death upon returning to idle)
+            if (strokeText.text == WarningStrokeDeath && isBallIdle == true)
             {
                 deathMenu.SetActive(true);
                 Time.timeScale = 0f;
