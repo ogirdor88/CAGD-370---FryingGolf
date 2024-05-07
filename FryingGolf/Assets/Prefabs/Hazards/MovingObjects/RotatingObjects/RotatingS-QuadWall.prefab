@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 9041693130369580492}
   m_Layer: 0
   m_Name: RotatingS-QuadWall
-  m_TagString: Untagged
+  m_TagString: Momentum
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

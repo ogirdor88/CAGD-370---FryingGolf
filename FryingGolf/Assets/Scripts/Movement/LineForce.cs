@@ -201,7 +201,16 @@ public class LineForce : MonoBehaviour
         {
             Bounce(collision.contacts[0].normal);
         }
+
+        if (collision.gameObject.tag == "Momentum")
+        {
+            _isIdle = false;
+            var direction = Vector3.Reflect(lastFrameVelocity.normalized, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z));
+            _rigidbody.velocity = direction * Mathf.Max(2f, 1f);
+        }
         
+
+
     }
 
     private void Bounce(Vector3 collisionNormal)

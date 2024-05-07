@@ -586,7 +586,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &303507158
 Transform:
   m_ObjectHideFlags: 0
@@ -3127,7 +3127,12 @@ PrefabInstance:
     - target: {fileID: 3385239725652530197, guid: 0080aaae5d079314dbefcd85669e3ed8,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385239725652530197, guid: 0080aaae5d079314dbefcd85669e3ed8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Momentum
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3336,7 +3341,12 @@ PrefabInstance:
     - target: {fileID: 2961881878889074099, guid: 282d099f2ad355e43b7e93dab2e3da27,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2961881878889074099, guid: 282d099f2ad355e43b7e93dab2e3da27,
+        type: 3}
+      propertyPath: m_TagString
+      value: Momentum
       objectReference: {fileID: 0}
     - target: {fileID: 4826006837339559046, guid: 282d099f2ad355e43b7e93dab2e3da27,
         type: 3}
