@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1859320486}
-  m_IndirectSpecularColor: {r: 0.15964344, g: 0.15621586, b: 0.12486945, a: 1}
+  m_IndirectSpecularColor: {r: 0.15964356, g: 0.15621598, b: 0.12486948, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -551,7 +551,7 @@ GameObject:
   - component: {fileID: 113673464}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -773,6 +773,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RampHump1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8921789749324938786, guid: 721050bd917fb52499b8d95385ef1f70,
+        type: 3}
+      propertyPath: m_TagString
+      value: NoBounce
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -860,7 +865,7 @@ GameObject:
   - component: {fileID: 268971256}
   m_Layer: 0
   m_Name: Cube (9)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -965,7 +970,7 @@ GameObject:
   - component: {fileID: 284788056}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1821,7 +1826,7 @@ GameObject:
   - component: {fileID: 546393098}
   m_Layer: 0
   m_Name: Cube (11)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2014,7 +2019,7 @@ GameObject:
   - component: {fileID: 637316114}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2257,6 +2262,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RampHump1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8921789749324938786, guid: 721050bd917fb52499b8d95385ef1f70,
+        type: 3}
+      propertyPath: m_TagString
+      value: NoBounce
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2566,7 +2576,7 @@ GameObject:
   - component: {fileID: 766315222}
   m_Layer: 0
   m_Name: Cube (10)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2671,7 +2681,7 @@ GameObject:
   - component: {fileID: 813876511}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4306,7 +4316,7 @@ GameObject:
   - component: {fileID: 1171621816}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5145,7 +5155,7 @@ GameObject:
   - component: {fileID: 1428735924}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5677,6 +5687,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RampHump1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7b640c3b49bdc64db9aa87ee7ddc37e,
+        type: 3}
+      propertyPath: m_TagString
+      value: NoBounce
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6435,7 +6450,7 @@ GameObject:
   - component: {fileID: 1831494786}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6626,7 +6641,7 @@ GameObject:
   - component: {fileID: 1866944152}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
