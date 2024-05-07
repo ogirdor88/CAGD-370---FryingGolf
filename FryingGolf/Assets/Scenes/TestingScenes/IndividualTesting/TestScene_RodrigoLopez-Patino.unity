@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 207217593}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: NoBounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -586,7 +586,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &303507158
 Transform:
   m_ObjectHideFlags: 0
@@ -3157,6 +3157,11 @@ PrefabInstance:
       propertyPath: SpawnPoint
       value: 
       objectReference: {fileID: 1255334078}
+    - target: {fileID: 4166718457951324510, guid: 92cc41ff99076dc48b41534cded11e8f,
+        type: 3}
+      propertyPath: minVelocity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4166718457951324510, guid: 92cc41ff99076dc48b41534cded11e8f,
         type: 3}
       propertyPath: stopVelocity
