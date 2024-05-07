@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Security;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Experimental.AI;
@@ -9,6 +10,7 @@ public class LineForce : MonoBehaviour
     [SerializeField]private LineRenderer lineRenderer;
     [SerializeField]private float stopVelocity = .05f;
     [SerializeField]private float shotPower;
+    [SerializeField]private float PowerLimit;
     public GameObject SpawnPoint;
 
     //Updating strokeCount in function Shootball to be used in UIManager script.
@@ -160,7 +162,8 @@ public class LineForce : MonoBehaviour
         Vector3[] positions =
         {
             transform.position,
-            new Vector3( worldpoint.x, gameObject.transform.position.y, worldpoint.z)
+            //new Vector3( worldpoint.x, gameObject.transform.position.y, worldpoint.z)
+            Vector3.MoveTowards(transform.position, new Vector3( worldpoint.x, gameObject.transform.position.y, worldpoint.z), PowerLimit)
         };
         lineRenderer.SetPositions(positions);
         lineRenderer.enabled = true;

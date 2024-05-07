@@ -3154,6 +3154,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4166718457951324510, guid: 92cc41ff99076dc48b41534cded11e8f,
         type: 3}
+      propertyPath: PowerLimit
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166718457951324510, guid: 92cc41ff99076dc48b41534cded11e8f,
+        type: 3}
       propertyPath: SpawnPoint
       value: 
       objectReference: {fileID: 1255334078}
