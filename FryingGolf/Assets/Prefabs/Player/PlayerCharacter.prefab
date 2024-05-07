@@ -77,7 +77,7 @@ PrefabInstance:
     - target: {fileID: 1194400359502402763, guid: dcf1b21c73f2c374ba78473e085d3a06,
         type: 3}
       propertyPath: m_Name
-      value: MapCamTemp(needed to playtest levels
+      value: MapCam
       objectReference: {fileID: 0}
     - target: {fileID: 8265596409316657916, guid: dcf1b21c73f2c374ba78473e085d3a06,
         type: 3}

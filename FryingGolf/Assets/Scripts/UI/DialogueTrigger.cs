@@ -11,7 +11,7 @@ public class DialogueTrigger : MonoBehaviour
     public GameObject DialogueText;
     public GameObject Player;
     public GameObject DialogueCollider;
-    public float time = 2f;
+    public float time = 5f;
     void Start()
     {
         DialogueText.SetActive(false);
@@ -22,7 +22,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             
             DialogueText.SetActive(true);
-            //ok so after two seconds the ball can start controlling if they spawn in 
+            //ok so after three seconds the ball can start controlling if they spawn in 
             Invoke("disapear", time);
             Invoke("disapear2", time);
 

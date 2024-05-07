@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1859320486}
-  m_IndirectSpecularColor: {r: 0.15964356, g: 0.15621598, b: 0.12486948, a: 1}
+  m_IndirectSpecularColor: {r: 0.15964344, g: 0.15621586, b: 0.12486945, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1334,7 +1334,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "I warned you to be careful .This is the consequences of your actions tsk
+  m_Text: "I warned you to be careful. \nThis is the consequences of your actions\ntsk
     tsk tsk \n"
 --- !u!222 &356644487
 CanvasRenderer:
@@ -2339,7 +2339,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "be careful this obstacle  goes in circles \n\n"
+  m_Text: "Be careful\nThis obstacle goes in circles \n\n"
 --- !u!222 &689909665
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2543,7 +2543,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Oh look a path ,wonder where will it will lead us to \r\n"
+  m_Text: "Oh look a path, wonder where will it will lead us to \r\n"
 --- !u!222 &741828781
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2902,7 +2902,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -31}
-  m_SizeDelta: {x: 442.12, y: 172.1}
+  m_SizeDelta: {x: 758.7, y: 172.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &853915571
 MonoBehaviour:
@@ -2934,11 +2934,10 @@ MonoBehaviour:
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'you now just got to get past the vertical moving platform and then your
-    done '
+  m_Text: 'You now just have to get past the elevator and then you are done '
 --- !u!222 &853915572
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2982,7 +2981,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 442.12, y: 172.1}
+  m_SizeDelta: {x: 599, y: 172.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &862980772
 MonoBehaviour:
@@ -3014,10 +3013,10 @@ MonoBehaviour:
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'wow now ready to listen to the history of rotating platforms .
+  m_Text: 'Wow, now ready to listen to the history of rotating platforms.
 
 '
 --- !u!222 &862980773
@@ -3560,11 +3559,11 @@ MonoBehaviour:
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Yeah there probably wasn\u2019t anything important anyway oh look a area
-    full of pits \n"
+  m_Text: "Yeah, there probably wasn\u2019t anything important anyway\n\nOh look!
+    An area full of pits \n"
 --- !u!222 &988804004
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3590,7 +3589,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -31}
-  m_SizeDelta: {x: 442.12, y: 172.1}
+  m_SizeDelta: {x: 535.8, y: 205.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1055635235
 GameObject:
@@ -6189,7 +6188,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -31}
-  m_SizeDelta: {x: 442.12, y: 172.1}
+  m_SizeDelta: {x: 613.4, y: 228.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1761670349
 MonoBehaviour:
@@ -6221,10 +6220,10 @@ MonoBehaviour:
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Oh look a CTPWHARTI(Collectible that won't have any reward to it) grab
+  m_Text: "Oh look a CTPWHARTI (Collectible that won't have any reward to it)\nGrab
     it \r\n"
 --- !u!222 &1761670350
 CanvasRenderer:
@@ -6814,6 +6813,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 111757694424545333, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 857
+      objectReference: {fileID: 0}
+    - target: {fileID: 111757694424545333, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 198.57
+      objectReference: {fileID: 0}
     - target: {fileID: 374570305738131999, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
       propertyPath: m_IsActive
@@ -6832,8 +6841,8 @@ PrefabInstance:
     - target: {fileID: 948996466134982117, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
       propertyPath: m_Text
-      value: "Oh another slope but this time it also goes down.Thats an improvement
-        I guess \r\n"
+      value: "Level Four\n\nOh another slope but this time it also goes down. Thats
+        an improvement I guess \r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 948996466134982117, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
@@ -6849,6 +6858,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.r
       value: 0.6132076
+      objectReference: {fileID: 0}
+    - target: {fileID: 948996466134982117, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1232253543355637522, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
@@ -7017,6 +7031,16 @@ PrefabInstance:
       objectReference: {fileID: 2053598693}
     - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
+      propertyPath: LevelOne
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: LevelTwo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
       propertyPath: LevelFour
       value: 1
       objectReference: {fileID: 0}
@@ -7025,6 +7049,11 @@ PrefabInstance:
       propertyPath: strokeInt
       value: 
       objectReference: {fileID: 2053598693}
+    - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: LevelThree
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
       propertyPath: golfBallIdle
@@ -7340,6 +7369,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MapCamTemp(needed to playtest levels
       objectReference: {fileID: 0}
+    - target: {fileID: 1194400359502402763, guid: dcf1b21c73f2c374ba78473e085d3a06,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8265596409316657916, guid: dcf1b21c73f2c374ba78473e085d3a06,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7413,6 +7447,11 @@ PrefabInstance:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 2083273952}
+    - target: {fileID: 6285967596957142901, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -80.55
+      objectReference: {fileID: 0}
     - target: {fileID: 7001056026476589772, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: SpawnPoint

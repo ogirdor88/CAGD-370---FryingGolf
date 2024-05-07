@@ -8,7 +8,7 @@ public class WinnerText : MonoBehaviour
     // Start is called before the first frame update
    //:Thou author :Fernando Uribe-Hernandez
    //:Date :He forgot but its probably 3/14/24?
-   //:Description:This is when the player interacts with the goal  they will activate the text that will tell them they have cleared the level and the 
+   //:Description:This is when the player interacts with the goal they will activate the text that will tell them they have cleared the level and the 
    //scene is changing
     public GameObject Goal;
     private int goal;

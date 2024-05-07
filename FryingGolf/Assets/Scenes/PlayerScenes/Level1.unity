@@ -809,8 +809,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "HAHAHA that won\u2019t work  in this universe,the tax man won\u2019t let
-    us ."
+  m_Text: "HAHAHA\nThat won\u2019t work in this universe, the tax man won\u2019t
+    let us ."
 --- !u!222 &239173099
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1764,7 +1764,10 @@ PrefabInstance:
     - target: {fileID: 948996466134982117, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
       propertyPath: m_Text
-      value: Welcome to the world of frying golf
+      value: 'Level One
+
+
+        Welcome to the world of Frying Golf'
       objectReference: {fileID: 0}
     - target: {fileID: 948996466134982117, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
@@ -1796,6 +1799,11 @@ PrefabInstance:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1667571413}
+    - target: {fileID: 6588477167751534162, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8132213246706568461, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1896,6 +1904,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8495247381404369895, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
       propertyPath: eggInt
@@ -1908,9 +1921,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
+      propertyPath: LevelTwo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: LevelFour
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
       propertyPath: strokeInt
       value: 
       objectReference: {fileID: 1964454681}
+    - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: LevelThree
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
       propertyPath: golfBallIdle
@@ -2483,7 +2511,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: I sense something ,and that is an EGG gogogo
+  m_Text: 'I sense something. And that is an EGG.
+
+    GO GO GO'
 --- !u!222 &986201845
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2667,7 +2697,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Egg got and you are almost done good job
+  m_Text: 'Egg collected and you are almost done
+
+    Good Job'
 --- !u!222 &1023204455
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2927,7 +2959,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 442.12, y: 172.1}
+  m_SizeDelta: {x: 734.31, y: 172.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1199392284
 MonoBehaviour:
@@ -2959,10 +2991,10 @@ MonoBehaviour:
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You are indeed upon floating using the gravitational force we call gravity
+  m_Text: You are indeed floating using the gravitational force we call gravity
 --- !u!222 &1199392285
 CanvasRenderer:
   m_ObjectHideFlags: 0

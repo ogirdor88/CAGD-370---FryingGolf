@@ -910,7 +910,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Go towards the slope and finish strong .You can do it \n\n\n"
+  m_Text: "Go towards the slope and finish strong\nYou can do it \n\n\n"
 --- !u!222 &149697820
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -976,7 +976,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Wow you did it, see you next level .
+  m_Text: 'Wow you did it, see you next level.
 
 
 
@@ -1429,7 +1429,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "This one huh\u2026well I wouldn\u2019t blame ya the other one looks scary\r\n\n"
+  m_Text: "This one huh\u2026 \nWell I wouldn\u2019t blame ya'\nThe other one looks
+    scary\r\n\n"
 --- !u!222 &265959120
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2766,7 +2767,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "We rate it as ..\u201Dyou fell ,try again \u201C\n\n\n"
+  m_Text: 'We rate it as... "you fell, try again"
+
+
+
+'
 --- !u!222 &604301752
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3674,11 +3679,12 @@ MonoBehaviour:
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "You have two paths ,one simple and easy and the other  inclined walls 
-    You\u2019re choice\n"
+  m_Text: 'You have two paths, one simple and easy and the other with perilous slopes
+
+'
 --- !u!222 &742927312
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3704,7 +3710,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 442.12, y: 300}
+  m_SizeDelta: {x: 600, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &756871669
 GameObject:
@@ -4477,11 +4483,14 @@ MonoBehaviour:
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u201DThese are out of the way why are u hitting them \u201C-Golf ball
-    (whatever year it is cause yeah the narrator forgot.)\n\n\n"
+  m_Text: '"These are out of the way. Why are you hitting them?!" - Golf ball XXXX
+
+
+
+'
 --- !u!222 &814614903
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5143,7 +5152,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 442.12, y: 300}
+  m_SizeDelta: {x: 600, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &994102665
 MonoBehaviour:
@@ -5178,7 +5187,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Heres the slope angle you''re shot and go
+  m_Text: 'Here is the slope angle
+
+    Just shoot and go
 
 '
 --- !u!222 &994102666
@@ -5987,7 +5998,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "wow you got here great job \n\n\n"
+  m_Text: "wow\nYou got here\nGreat job \n\n\n"
 --- !u!222 &1125189734
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7050,10 +7061,14 @@ MonoBehaviour:
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Ok so I ran out of ramp history so meanwhile you continue I will count
+  m_Text: 'I ran out of ramp history
+
+    Meanwhile, you continue
+
+    I will count
     the money we owe the bank
 
 '
@@ -7082,7 +7097,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 442.12, y: 300}
+  m_SizeDelta: {x: 600, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1366641085 stripped
 Transform:
@@ -7561,7 +7576,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u201DOw\u201D-golf ball (whatever this year is cause the narrator forgot)\n\n"
+  m_Text: '"Ow" - Golf Ball XXXX
+
+    (whatever this year is because the narrator
+    forgot)
+
+
+'
 --- !u!222 &1452821786
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8417,6 +8438,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 111757694424545333, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 111757694424545333, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 237.32
+      objectReference: {fileID: 0}
     - target: {fileID: 409924125817092680, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
       propertyPath: m_IsActive
@@ -8435,8 +8466,8 @@ PrefabInstance:
     - target: {fileID: 948996466134982117, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
       propertyPath: m_Text
-      value: "Wow another ramp,the creator of this really must\u2019ve run out of
-        ideas \r\n"
+      value: "Level Three\n\nWow another ramp, the creator of this really must\u2019ve
+        run out of ideas \r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 948996466134982117, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
@@ -8457,6 +8488,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_FontStyle
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 948996466134982117, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3353153807874594136, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
@@ -8593,6 +8629,21 @@ PrefabInstance:
       propertyPath: eggInt
       value: 
       objectReference: {fileID: 1839749807}
+    - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: LevelOne
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: LevelTwo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: LevelFour
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8996248460370221865, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
       propertyPath: strokeInt
@@ -8962,7 +9013,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 442.12, y: 300}
+  m_SizeDelta: {x: 600, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1710422142
 MonoBehaviour:
@@ -8997,7 +9048,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Well good luck we believe in you \n"
+  m_Text: "Well, good luck! We believe in you \n"
 --- !u!222 &1710422143
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9947,7 +9998,7 @@ PrefabInstance:
     - target: {fileID: 2324760931744651872, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: heightSpeed
-      value: 1.29
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3323236914585508944, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
@@ -9967,7 +10018,7 @@ PrefabInstance:
     - target: {fileID: 3466745929937465590, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4276039902782843468, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
@@ -10098,7 +10149,7 @@ GameObject:
   - component: {fileID: 1859104156}
   - component: {fileID: 1859104155}
   m_Layer: 0
-  m_Name: for asthetic purposes
+  m_Name: for aesthetic purposes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11443,11 +11494,18 @@ MonoBehaviour:
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Wow a collectible ,that will most likely turn out to not have any reward
-    and there just to satisfy the need for people to collect them \r\n\n"
+  m_Text: 'Wow, a collectible.
+
+
+
+
+
+
+    (that will most likely not turn out to have
+    any reward and is there just to satisfy the need for people to collect them)'
 --- !u!222 &2068168245
 CanvasRenderer:
   m_ObjectHideFlags: 0

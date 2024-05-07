@@ -30,10 +30,10 @@ public class UIManager : MonoBehaviour
 
     //variables storing the total collectible count by scene
     private int TestScene = 1;
-    [SerializeField] int LevelOne = 2;
-    [SerializeField] int LevelTwo = 3;
-    [SerializeField] int LevelThree = 4;
-    [SerializeField] int LevelFour = 5;
+    [SerializeField] int LevelOne = 1;
+    [SerializeField] int LevelTwo = 1;
+    [SerializeField] int LevelThree = 1;
+    [SerializeField] int LevelFour = 1;
     [SerializeField] int LevelFive = 6;
 
     //Warning Text variables
@@ -70,8 +70,6 @@ public class UIManager : MonoBehaviour
             eggText.text = "Sunny-Side Up Eggs Found 0/" + LevelFour;
         if (SceneManager.GetActiveScene().buildIndex == 6)
             eggText.text = "Sunny-Side Up Eggs Found 0/" + LevelFive;
-        /*if (SceneManager.GetActiveScene().buildIndex == 5)
-            eggText.text = "Sunny-Side Up Eggs Found 0/" + LevelFour;*/
     }
 
     private void Start()
@@ -110,81 +108,83 @@ public class UIManager : MonoBehaviour
             eggText.text = "Sunny-Side Up Eggs Found " + eggCollected.ToString() + "/" + LevelFour;
         if (SceneManager.GetActiveScene().buildIndex == 6)
             eggText.text = "Sunny-Side Up Eggs Found " + eggCollected.ToString() + "/" + LevelFive;
-        /*if (SceneManager.GetActiveScene().buildIndex == 5)
-            eggText.text = "Sunny-Side Up Eggs Found " + eggCollected.ToString() + "/" + LevelFour;*/
     }
   private void Warnings()
     {
-        //Stroke 10
-        if (strokeText.text == "Strokes 10")//&& true
+        if(SceneManager.GetActiveScene().buildIndex != 6)
         {
-            warningText.enabled = true;
-            //print("text was enabled");
-            //Invoke("Disapearableation", 6f);
-   
-            //warningText.enabled= false;
-        }
-        else
-        {
-            warningText.enabled = false;
-            //print("Text was disabled");
-        }
-        //Stroke 11
-        if (strokeText.text == "Strokes 11")
-        {
-            warningText2.enabled = true;
-            //print("text was enabled");
-            
-        }
-        else
-        {
-            warningText2.enabled = false;
-            //print("Text was disabled");
-        }
-        //Stroke 12
-        if (strokeText.text == "Strokes 12")
-        {
-            warningText3.enabled = true;
-            //print("text was enabled");
-            
-        }
-        else
-        {
-            warningText3.enabled = false;
-            //print("Text was disabled");
-        }
-        //Stroke 13
-        if (strokeText.text == "Strokes 13")
-        {
-            warningText4.enabled = true;
-            //print("text was enabled");
-            
-        }
-        else
-        {
-            warningText4.enabled = false;
-            //print("Text was disabled");
-        }
-        //Stroke 14
-        if (strokeText.text == "Strokes 14")
-        {
-            warningText5.enabled = true;
-            //print("text was enabled");
-           
+            //Stroke 10
+            if (strokeText.text == "Strokes 20")//&& true
+            {
+                warningText.enabled = true;
+                //print("text was enabled");
+                //Invoke("Disapearableation", 6f);
 
-        }
-        else
-        {
-            warningText5.enabled = false;
-            //print("Text was disabled");
-        }
+                //warningText.enabled= false;
+            }
+            else
+            {
+                warningText.enabled = false;
+                //print("Text was disabled");
+            }
+            //Stroke 11
+            if (strokeText.text == "Strokes 21")
+            {
+                warningText2.enabled = true;
+                //print("text was enabled");
 
-        //Stroke 15 (They have lost)
-        if (strokeText.text == "Strokes 15" && isBallIdle == true)
-        {
-            deathMenu.SetActive(true);
-            Time.timeScale = 0f;
+            }
+            else
+            {
+                warningText2.enabled = false;
+                //print("Text was disabled");
+            }
+            //Stroke 12
+            if (strokeText.text == "Strokes 22")
+            {
+                warningText3.enabled = true;
+                //print("text was enabled");
+
+            }
+            else
+            {
+                warningText3.enabled = false;
+                //print("Text was disabled");
+            }
+            //Stroke 13
+            if (strokeText.text == "Strokes 23")
+            {
+                warningText4.enabled = true;
+                //print("text was enabled");
+
+            }
+            else
+            {
+                warningText4.enabled = false;
+                //print("Text was disabled");
+            }
+            //Stroke 14
+            if (strokeText.text == "Strokes 24")
+            {
+                warningText5.enabled = true;
+                //print("text was enabled");
+
+
+            }
+            else
+            {
+                warningText5.enabled = false;
+                //print("Text was disabled");
+            }
+
+            //Stroke 15 (They have lost)
+            if (strokeText.text == "Strokes 25" && isBallIdle == true)
+            {
+                deathMenu.SetActive(true);
+                Time.timeScale = 0f;
+            }
         }
+        
     }
 
     public void Disapearableation()

@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     {
         isAiming = false;
         isBallIdle = true;  
-        fryingPan.SetActive(true);
+        //fryingPan.SetActive(true);
         offset = golfBall.position - fryingPan.transform.position;
     }
 
@@ -45,10 +45,11 @@ public class Player : MonoBehaviour
         
         if (isBallIdle == true) 
         {
-            fryingPan.SetActive(true);
+            //fryingPan.SetActive(true);
 
             if(isAiming == true)
             {
+                fryingPan.SetActive(true);
                 Vector3? worldpoint = MouseRay();
 
                 if (!worldpoint.HasValue)

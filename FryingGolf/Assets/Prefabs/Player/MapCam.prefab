@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7631837686260980635}
   - component: {fileID: 1802399187742164754}
   m_Layer: 0
-  m_Name: MapCamTemp(needed to playtest levels
+  m_Name: MapCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
