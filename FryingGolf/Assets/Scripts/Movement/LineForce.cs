@@ -193,6 +193,13 @@ public class LineForce : MonoBehaviour
         {
             transform.position = new Vector3(collision.transform.position.x, transform.position.y, collision.transform.position.z);
         }
+
+        if (collision.gameObject.tag == "Momentum")
+        {
+            _isIdle = false;
+            var direction = Vector3.Reflect(lastFrameVelocity.normalized, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z));
+            _rigidbody.velocity = direction * Mathf.Max(10f, 10f);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -206,11 +213,8 @@ public class LineForce : MonoBehaviour
         {
             _isIdle = false;
             var direction = Vector3.Reflect(lastFrameVelocity.normalized, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z));
-            _rigidbody.velocity = direction * Mathf.Max(2f, 1f);
+            _rigidbody.velocity = direction * Mathf.Max(10f, 10f);
         }
-        
-
-
     }
 
     private void Bounce(Vector3 collisionNormal)
