@@ -160,7 +160,7 @@ public class LineForce : MonoBehaviour
         Vector3[] positions =
         {
             transform.position,
-            worldpoint
+            new Vector3( worldpoint.x, gameObject.transform.position.y, worldpoint.z)
         };
         lineRenderer.SetPositions(positions);
         lineRenderer.enabled = true;
