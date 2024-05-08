@@ -8509,6 +8509,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3406095825967456232, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Stage clear
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4983718340384636500, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Changing scene
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 5066412909467157068, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
       propertyPath: m_AnchoredPosition.x

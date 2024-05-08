@@ -1794,12 +1794,22 @@ PrefabInstance:
       propertyPath: m_Text
       value: "Stage Clear \n"
       objectReference: {fileID: 0}
+    - target: {fileID: 3406095825967456232, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4983718340384636500, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
       propertyPath: m_Text
       value: 'Changing scene
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4983718340384636500, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5066412909467157068, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
@@ -2777,7 +2787,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 816676205}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -3096,7 +3106,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 816676205}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
