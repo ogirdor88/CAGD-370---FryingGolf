@@ -5,14 +5,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 //Author(s): Jackson, Katherine
-//Updated: 04/03/24
-//This script executes all code relevant to switching scenes, pausing, quiting the game, etc..
+//Updated: 05/07/24
+//This script executes all code relevant to switching scenes, pausing, quitting the game, etc..
 
 public class Menu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject pauseInfo;
     [SerializeField] GameObject respawnInfo;
+    [SerializeField] GameObject mapInfo;
     [SerializeField] GameObject deathMenu;
     private bool _isDead;
 
@@ -35,7 +36,7 @@ public class Menu : MonoBehaviour
     {
         _isDead = deathMenu.activeSelf;
 
-        if (_isDead != true)
+        if (_isDead != true)//If bool _isDead is not equal to true, then the player can press key Escape to pause and key R to respawn
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
@@ -49,11 +50,25 @@ public class Menu : MonoBehaviour
                 player.GetComponent<Rigidbody>().velocity = deadStop;
             }
         }
-        else
+        else //If bool _isDead is equal to true, then the player cannot interact with the PauseMenu UI or see any info UI
+             //while DeathMenu UI is locally active in scene
         {
             pauseMenu.SetActive(false);
             pauseInfo.SetActive(false);
             respawnInfo.SetActive(false);
+            mapInfo.SetActive(false);
+        }       
+        if(pauseMenu.activeSelf == true)//If pauseMenu is locally active in scene, turn off informational UI
+        {
+            pauseInfo.SetActive(false);
+            respawnInfo.SetActive(false);
+            mapInfo.SetActive(false);
+        }
+        else
+        {
+            pauseInfo.SetActive(true);
+            respawnInfo.SetActive(true);
+            mapInfo.SetActive(true);
         }
     }
 

@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     private bool isAiming;
 
     private Vector3 offset;
+    private float _powerLimit;
 
     [SerializeField] public int eggCount;
 
@@ -103,10 +104,12 @@ public class Player : MonoBehaviour
 
     private void panMouseMove(Vector3 worldpoint)
     {
+        _powerLimit = golfBall.GetComponent<LineForce>().PowerLimit;
+
         Vector3[] positions =
         {
             transform.position,
-            worldpoint
+            Vector3.MoveTowards(transform.position, new Vector3( worldpoint.x, gameObject.transform.position.y, worldpoint.z), _powerLimit)
         };
         fryingPan.transform.position = new Vector3 (worldpoint.x, gameObject.transform.position.y, worldpoint.z);
 

@@ -17,9 +17,9 @@ public class WinnerText : MonoBehaviour
     public Text SceneChangeText;
     void Start()
     {
-        winnerText.enabled = false;
+        //winnerText.enabled = false;
         //Try 3 
-        SceneChangeText.enabled = false;
+        //SceneChangeText.enabled = false;
     }
 
     // Update is called once per frame

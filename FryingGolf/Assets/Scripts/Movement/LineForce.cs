@@ -10,7 +10,7 @@ public class LineForce : MonoBehaviour
     [SerializeField]private LineRenderer lineRenderer;
     [SerializeField]private float stopVelocity = .05f;
     [SerializeField]private float shotPower;
-    [SerializeField]private float PowerLimit;
+    public float PowerLimit;
     public GameObject SpawnPoint;
 
     //Updating strokeCount in function Shootball to be used in UIManager script.
