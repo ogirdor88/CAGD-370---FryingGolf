@@ -1942,6 +1942,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RotatingV-Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 2961881878889074099, guid: 282d099f2ad355e43b7e93dab2e3da27,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4826006837339559046, guid: 282d099f2ad355e43b7e93dab2e3da27,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -6928,7 +6933,7 @@ PrefabInstance:
     - target: {fileID: 5066412909467157068, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -19.999878
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 5066412909467157068, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
@@ -6963,7 +6968,7 @@ PrefabInstance:
     - target: {fileID: 7389294248989559808, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -19.999878
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 8132213246706568461, guid: 3e54e45436632c64cb36f08ed6da9f7f,
         type: 3}
@@ -7546,17 +7551,17 @@ PrefabInstance:
     - target: {fileID: 8793439509179431284, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -43.8
+      value: -174.6
       objectReference: {fileID: 0}
     - target: {fileID: 8793439509179431284, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.2
+      value: 8.3
       objectReference: {fileID: 0}
     - target: {fileID: 8793439509179431284, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.7
+      value: -4.9
       objectReference: {fileID: 0}
     - target: {fileID: 8793439509179431284, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
