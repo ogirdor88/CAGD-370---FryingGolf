@@ -8822,6 +8822,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1681683953}
   m_PrefabAsset: {fileID: 0}
+--- !u!223 &1681683956 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 898530800069717006, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1681683953}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1702689032
 GameObject:
   m_ObjectHideFlags: 0
@@ -10024,6 +10030,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 336396796230633409, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: _playerCanvas
+      value: 
+      objectReference: {fileID: 1681683956}
     - target: {fileID: 492642833899064630, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: airDrag
@@ -10109,6 +10120,21 @@ PrefabInstance:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 2128442210}
+    - target: {fileID: 6285967596957142901, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -132.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285967596957142901, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 153.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285967596957142901, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7001056026476589772, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: PowerLimit
@@ -12587,13 +12613,13 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 804872306}
+  - {fileID: 1681683953}
+  - {fileID: 1045158424}
+  - {fileID: 1883027489}
   - {fileID: 1839749806}
   - {fileID: 2128442209}
-  - {fileID: 1681683953}
   - {fileID: 2847647475314330334}
-  - {fileID: 1807203710}
   - {fileID: 655371358}
+  - {fileID: 1807203710}
   - {fileID: 1091986683}
   - {fileID: 1806559318}
-  - {fileID: 1883027489}
-  - {fileID: 1045158424}

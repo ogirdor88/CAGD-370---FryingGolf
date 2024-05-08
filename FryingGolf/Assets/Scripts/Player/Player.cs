@@ -13,6 +13,10 @@ public class Player : MonoBehaviour
     public GameObject fryingPan;
     public Transform golfBall;
 
+    //Canvas control
+    [SerializeField] private GameObject _playerCharacter;
+    [SerializeField] private Canvas _playerCanvas;
+
     private bool isBallIdle;
     private bool isAiming;
 
@@ -24,8 +28,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         isAiming = false;
-        isBallIdle = true;  
-        //fryingPan.SetActive(true);
+        isBallIdle = true;
         offset = golfBall.position - fryingPan.transform.position;
     }
 
@@ -46,17 +49,13 @@ public class Player : MonoBehaviour
         
         if (isBallIdle == true) 
         {
-            //fryingPan.SetActive(true);
-
             if(isAiming == true)
             {
                 fryingPan.SetActive(true);
                 Vector3? worldpoint = MouseRay();
 
                 if (!worldpoint.HasValue)
-                {
                     return;
-                }
 
                 panMouseMove(worldpoint.Value);
             }
@@ -64,7 +63,12 @@ public class Player : MonoBehaviour
             fryingPan.transform.LookAt(golfBall.position, Vector3.up);
         }
 
-
+        if (_playerCharacter.GetComponentInChildren<CameraMovement>().mapCam.enabled == true)
+            _playerCanvas.enabled = false;
+        else
+        {
+            _playerCanvas.enabled = true;
+        }
     }
 
     private void OnMouseDown()
@@ -109,7 +113,9 @@ public class Player : MonoBehaviour
         Vector3[] positions =
         {
             transform.position,
-            Vector3.MoveTowards(transform.position, new Vector3( worldpoint.x, gameObject.transform.position.y, worldpoint.z), _powerLimit)
+            //PowerLimit (Removed from project due to incorrect snapping)
+            //Vector3.MoveTowards(transform.position, new Vector3( worldpoint.x, gameObject.transform.position.y, worldpoint.z), _powerLimit)
+            new Vector3( worldpoint.x, gameObject.transform.position.y, worldpoint.z)
         };
         fryingPan.transform.position = new Vector3 (worldpoint.x, gameObject.transform.position.y, worldpoint.z);
 

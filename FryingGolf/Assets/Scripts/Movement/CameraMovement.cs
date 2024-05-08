@@ -28,8 +28,7 @@ public class CameraMovement : MonoBehaviour
     [SerializeField]
     private Camera followCam;
 
-    [SerializeField]
-    private Camera mapCam;
+    public Camera mapCam;
 
     private void Awake()
     {

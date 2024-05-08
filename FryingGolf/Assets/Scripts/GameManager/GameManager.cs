@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//DO NOT DELETE
+
 public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update

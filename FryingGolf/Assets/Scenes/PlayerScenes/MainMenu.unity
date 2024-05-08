@@ -1241,6 +1241,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 0}
   pauseInfo: {fileID: 0}
   respawnInfo: {fileID: 0}
+  mapInfo: {fileID: 0}
   deathMenu: {fileID: 0}
   player: {fileID: 0}
   respawnPoint: {fileID: 0}
@@ -2264,11 +2265,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelSelect Panel
-      objectReference: {fileID: 0}
-    - target: {fileID: 5519070502809938551, guid: 56b3bca86fe497040a4c86890123e57d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -4133,6 +4133,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2000480622}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!223 &1740513544 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 898530800069717006, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 816676205}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1763184159
 GameObject:
   m_ObjectHideFlags: 0
@@ -4757,6 +4763,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 336396796230633409, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: _playerCanvas
+      value: 
+      objectReference: {fileID: 1740513544}
     - target: {fileID: 492642833899064630, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: airAngularDrag
@@ -4837,6 +4848,16 @@ PrefabInstance:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1667571413}
+    - target: {fileID: 6285967596957142901, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -35.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285967596957142901, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7001056026476589772, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: PowerLimit
@@ -4847,6 +4868,11 @@ PrefabInstance:
       propertyPath: SpawnPoint
       value: 
       objectReference: {fileID: 1667571413}
+    - target: {fileID: 7192730008787439103, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8793439509179431284, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5351,10 +5377,10 @@ SceneRoots:
   m_Roots:
   - {fileID: 1519382548}
   - {fileID: 816676205}
+  - {fileID: 1640342161}
+  - {fileID: 1869780584}
   - {fileID: 1964454680}
   - {fileID: 96536666}
   - {fileID: 915122101}
   - {fileID: 30122928}
   - {fileID: 46398669}
-  - {fileID: 1869780584}
-  - {fileID: 1640342161}

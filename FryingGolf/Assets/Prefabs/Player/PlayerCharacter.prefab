@@ -177,7 +177,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 46b26b859197ffd4fbf30a0de44c4c35,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 46b26b859197ffd4fbf30a0de44c4c35,
         type: 3}
@@ -378,6 +378,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fryingPan: {fileID: 3466745929937465590}
   golfBall: {fileID: 1770658959129682837}
+  _playerCharacter: {fileID: 1697138823884882259}
+  _testCanvas: {fileID: 0}
+  _playerCanvas: {fileID: 0}
   eggCount: 0
 --- !u!1001 &8197464586942396829
 PrefabInstance:

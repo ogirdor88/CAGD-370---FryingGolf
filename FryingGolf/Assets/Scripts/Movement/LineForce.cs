@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Net.Security;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Experimental.AI;
 
 public class LineForce : MonoBehaviour
 {
-    [SerializeField]private LineRenderer lineRenderer;
-    [SerializeField]private float stopVelocity = .05f;
-    [SerializeField]private float shotPower;
+    public LineRenderer lineRenderer;
+    [SerializeField] private float stopVelocity = .05f;
+    [SerializeField] private float shotPower;
+    //PowerLimit removed due to incorrect snapping
     public float PowerLimit;
     public GameObject SpawnPoint;
 
@@ -46,13 +46,14 @@ public class LineForce : MonoBehaviour
     private void FixedUpdate()
     {
         //if the ball is moving slower that the stopping speed make the ball stop
-        if(_rigidbody.velocity.magnitude < stopVelocity)
+        if (_rigidbody.velocity.magnitude < stopVelocity)
         {
             StopBall();
         }
         Aiming();
         lastFrameVelocity = _rigidbody.velocity;
     }
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -73,7 +74,7 @@ public class LineForce : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         //if (other.gameObject.tag == "Water")
-            //Debug.Log("Oiuk");
+        //Debug.Log("Oiuk");
         if (other.gameObject.tag == "Water" && _isIdle)
         {
             _isWaterColliding = false;
@@ -91,8 +92,8 @@ public class LineForce : MonoBehaviour
     public void StopBall()
     {
         //set the velocity of the ball to 0
-        _rigidbody.velocity = new Vector3 (0f, _rigidbody.velocity.y, 0f);
-        _rigidbody.angularVelocity = new Vector3 (0f, _rigidbody.velocity.y, 0f);
+        _rigidbody.velocity = new Vector3(0f, _rigidbody.velocity.y, 0f);
+        _rigidbody.angularVelocity = new Vector3(0f, _rigidbody.velocity.y, 0f);
         this.GetComponent<Renderer>().material.color = Color.green;
 
         //the ball is idle
@@ -109,7 +110,7 @@ public class LineForce : MonoBehaviour
     private void OnMouseDown()
     {
         //if the ball is idle while we click the mouse button down then set aiming to true
-        if(_isIdle)
+        if (_isIdle)
         {
             _isAiming = true;
         }
@@ -118,7 +119,7 @@ public class LineForce : MonoBehaviour
     private void Aiming()
     {
         //if we are not aiming or not idle return
-        if(!_isAiming || !_isIdle) 
+        if (!_isAiming || !_isIdle)
         {
             return;
         }
@@ -133,7 +134,7 @@ public class LineForce : MonoBehaviour
 
         DrawLine(worldpoint.Value);
 
-        if(Input.GetMouseButtonUp(0)) 
+        if (Input.GetMouseButtonUp(0))
         {
             ShootBall(worldpoint.Value);
         }
@@ -141,9 +142,9 @@ public class LineForce : MonoBehaviour
 
     private void ShootBall(Vector3 wp)
     {
-        
+
         _isAiming = false;
-        lineRenderer.enabled=false;
+        lineRenderer.enabled = false;
         GetComponent<Renderer>().material.color = _color;
 
         Vector3 horizontalWorldPoint = new Vector3(wp.x, transform.position.y, wp.z);
@@ -151,7 +152,7 @@ public class LineForce : MonoBehaviour
         Vector3 direction = -(horizontalWorldPoint - transform.position).normalized;
         float strength = Vector3.Distance(transform.position, horizontalWorldPoint);
 
-        _rigidbody.AddForce( direction *  strength * shotPower);
+        _rigidbody.AddForce(direction * strength * shotPower);
         _isIdle = false;
 
         strokeCount++;
@@ -162,8 +163,9 @@ public class LineForce : MonoBehaviour
         Vector3[] positions =
         {
             transform.position,
-            //new Vector3( worldpoint.x, gameObject.transform.position.y, worldpoint.z)
-            Vector3.MoveTowards(transform.position, new Vector3( worldpoint.x, gameObject.transform.position.y, worldpoint.z), PowerLimit)
+            new Vector3( worldpoint.x, gameObject.transform.position.y, worldpoint.z)
+            //PowerLimit removed due to incorrect snapping
+            //Vector3.MoveTowards(transform.position, new Vector3( worldpoint.x, gameObject.transform.position.y, worldpoint.z), PowerLimit)
         };
         lineRenderer.SetPositions(positions);
         lineRenderer.enabled = true;
@@ -189,7 +191,7 @@ public class LineForce : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        if(collision.gameObject.tag == "Platform" && _isIdle)
+        if (collision.gameObject.tag == "Platform" && _isIdle)
         {
             transform.position = new Vector3(collision.transform.position.x, transform.position.y, collision.transform.position.z);
         }

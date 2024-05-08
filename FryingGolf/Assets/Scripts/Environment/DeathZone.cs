@@ -13,11 +13,8 @@ public class DeathZone : MonoBehaviour
     public GameObject respawnPoint;
     public bool isWaterColliding;
 
-    //private Rigidbody golfballRB;
-
     private Vector3 previousCheckpoint;
 
-    //private string waterCoroutine = WaterTimer();
 
     private void FixedUpdate()
     {
@@ -71,7 +68,8 @@ public class DeathZone : MonoBehaviour
         {
             Debug.Log("You drowned.");
             player.transform.position = previousCheckpoint;
-            //player.GetComponent<LineForce>().StopBall();
+            //set the velocity of the ball to 0 except on y axis
+            player.GetComponent<LineForce>().StopBall();
             Debug.Log("Respawned.");
         }
         else

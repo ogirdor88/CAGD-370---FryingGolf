@@ -7566,6 +7566,11 @@ PrefabInstance:
       propertyPath: eggCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 336396796230633409, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: _playerCanvas
+      value: 
+      objectReference: {fileID: 1936875379}
     - target: {fileID: 425155114895560717, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: m_Enabled
@@ -7574,17 +7579,22 @@ PrefabInstance:
     - target: {fileID: 425155114895560717, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: orthographic
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 425155114895560717, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: field of view
-      value: 51
+      value: 105.922
+      objectReference: {fileID: 0}
+    - target: {fileID: 425155114895560717, guid: 0d5ebe47543eed7449bfef6525f044c4,
+        type: 3}
+      propertyPath: m_FOVAxisMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 425155114895560717, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: orthographic size
-      value: 1316
+      value: 1236.0239
       objectReference: {fileID: 0}
     - target: {fileID: 492642833899064630, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
@@ -7689,17 +7699,17 @@ PrefabInstance:
     - target: {fileID: 6285967596957142901, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 500
+      value: -1522
       objectReference: {fileID: 0}
     - target: {fileID: 6285967596957142901, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 651
+      value: 925
       objectReference: {fileID: 0}
     - target: {fileID: 6285967596957142901, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1252
+      value: 969
       objectReference: {fileID: 0}
     - target: {fileID: 6285967596957142901, guid: 0d5ebe47543eed7449bfef6525f044c4,
         type: 3}
@@ -18977,6 +18987,12 @@ PrefabInstance:
       addedObject: {fileID: 1847232117}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e54e45436632c64cb36f08ed6da9f7f, type: 3}
+--- !u!223 &1936875379 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 898530800069717006, guid: 3e54e45436632c64cb36f08ed6da9f7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1936875378}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1948862539
 GameObject:
   m_ObjectHideFlags: 0
@@ -20959,12 +20975,12 @@ SceneRoots:
   m_Roots:
   - {fileID: 2027312303}
   - {fileID: 1936875378}
-  - {fileID: 1180651526}
+  - {fileID: 1076819218}
+  - {fileID: 134203554}
   - {fileID: 818526511}
   - {fileID: 1509362398}
+  - {fileID: 242493614}
+  - {fileID: 184293386}
   - {fileID: 1146828924}
   - {fileID: 1439311839}
-  - {fileID: 242493614}
-  - {fileID: 1076819218}
-  - {fileID: 184293386}
-  - {fileID: 134203554}
+  - {fileID: 1180651526}

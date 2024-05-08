@@ -23,9 +23,6 @@ public class Menu : MonoBehaviour
     public GameObject respawnPoint;
     private Vector3 deadStop = new Vector3(0f, 0f, 0f);
 
-    private bool inspBool;
-    //GameObject _UITarget;
-
     private void Awake()
     {
         Time.timeScale = 1f;
@@ -50,26 +47,29 @@ public class Menu : MonoBehaviour
                 player.GetComponent<Rigidbody>().velocity = deadStop;
             }
         }
-        else //If bool _isDead is equal to true, then the player cannot interact with the PauseMenu UI or see any info UI
+        else //If bool _isDead is equal to true, then the player cannot interact with the PauseMenu UI or see any info UI, FryingPan, or Line
              //while DeathMenu UI is locally active in scene
         {
             pauseMenu.SetActive(false);
             pauseInfo.SetActive(false);
             respawnInfo.SetActive(false);
             mapInfo.SetActive(false);
+            player.GetComponent<Player>().fryingPan.SetActive(false);
+            player.GetComponent<LineForce>().lineRenderer.enabled = false;
         }       
-        if(pauseMenu.activeSelf == true)//If pauseMenu is locally active in scene, turn off informational UI
+        if(pauseMenu.activeSelf == true)//If pauseMenu is locally active in scene, turn off informational UI, FryingPan, and line
         {
             pauseInfo.SetActive(false);
             respawnInfo.SetActive(false);
             mapInfo.SetActive(false);
+            player.GetComponent<Player>().fryingPan.SetActive(false);
+            player.GetComponent<LineForce>().lineRenderer.enabled = false;
         }
         else
         {
             pauseInfo.SetActive(true);
             respawnInfo.SetActive(true);
-            mapInfo.SetActive(true);
-        }
+            mapInfo.SetActive(true);       }
     }
 
     public void ExitButton()
